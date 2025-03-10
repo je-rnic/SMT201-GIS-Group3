@@ -1,9 +1,2 @@
-[build]
-  command = "quarto install && quarto render"
-  publish = "_site"
-  
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[plugins]]
+package = "@quarto/netlify-plugin-quarto"
