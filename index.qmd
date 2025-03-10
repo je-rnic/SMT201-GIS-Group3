@@ -1,0 +1,10 @@
+---
+title: "Welcome to My Quarto Project"
+format: html
+---
+
+# Hello, Quarto!
+
+This is a simple Quarto project deployed on Netlify.
+
+---
