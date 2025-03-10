@@ -1,6 +1,7 @@
 [build]
+  command = "quarto install && quarto render"
   publish = "_site"
-  command = "quarto render"
+  
 
 [[redirects]]
   from = "/*"
