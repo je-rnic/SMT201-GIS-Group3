@@ -5,8 +5,13 @@ project:
 
 website:
   title: "SolarScape"
+  page-footer:
+      center: "Copyright 2025, SolarScape"
   navbar:
+    background: dark
     left:
+      - href: index.qmd
+        text: Overview
       - href: pages/proposal.qmd
         text: Proposal
       - href: pages/methodology.qmd
@@ -15,6 +20,12 @@ website:
         text: Results and Discussion
       - href: pages/lessons.qmd
         text: Lessons Learnt
+      - href: pages/poster.qmd
+        text: Poster
+      - href: pages/report.qmd
+        text: Report
+    
+    
 
 format:
   html:

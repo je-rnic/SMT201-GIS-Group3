@@ -5,4 +5,10 @@ format: html
 
 Proposal Page
 
+# Motivation
+# Project Objective
+# Data 
+# Scope of Work
+# Project Schedule
+
 ---
