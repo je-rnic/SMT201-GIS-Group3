@@ -1,10 +1,70 @@
 ---
-title: "Welcome to My Quarto Project"
-format: html
+title: "SolarScape: Optimizing Solar Farm Locations with GIS"
+subtitle: "A Geospatial Analysis Project for Urban Sustainability"
+author: "Group 3 - GIS for Urban Planning"
+date: last-modified
 ---
 
-# Hello, Quarto!
+![](/images/solar-farm-banner.jpg){width=80%}
 
-This is a simple Quarto project deployed on Netlify.
 
----
+## Project Overview
+
+SolarScape is a comprehensive geospatial analysis project focused on optimizing the location of solar farms to maximize energy generation while minimizing environmental and social impacts. Using advanced GIS techniques, our team has developed a multi-criteria evaluation framework to identify ideal sites for solar farm development.
+
+The transition to renewable energy sources is a critical component of sustainable urban planning and climate change mitigation. Solar energy, in particular, offers immense potential but requires careful site selection to ensure economic viability, minimal ecological disruption, and community acceptance. Our project addresses this challenge by developing a data-driven approach to solar farm siting that balances technical, environmental, and social considerations.
+
+Through the integration of multiple geospatial datasets including solar radiation, land use, topography, infrastructure proximity, and environmental sensitivity, we've created a sophisticated model that identifies optimal locations for solar farm development. Our analysis not only highlights prime locations but also quantifies potential energy generation capacity and evaluates potential constraints.
+
+The findings from our project provide valuable insights for urban planners, energy developers, and policymakers seeking to expand renewable energy infrastructure while preserving ecological integrity and addressing community concerns.
+
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd) | [Download Full Report](report.pdf)
+
+## Key Objectives
+
+1. Develop a comprehensive GIS-based framework for solar farm site selection
+2. Identify and map optimal locations based on multiple technical and environmental criteria
+3. Quantify potential solar energy generation capacity at identified sites
+4. Analyze the environmental and social implications of proposed locations
+5. Create interactive visualization tools to support planning decisions
+
+## Team Members
+
+:::: {.columns}
+
+::: {.column width="100%"}
+- **Toh Rui Chen** - Student
+- **Yeo Jun Zhi, Jernic** - Student
+- **Chamus Chew Yat Weng** - Student
+:::
+
+::::
+
+## Project Timeline
+
+```{mermaid}
+gantt
+    title SolarScape Project Schedule
+    dateFormat  MM-DD
+    section Planning
+    Project Initialization    :01-15, 15d
+    Literature Review         :01-20, 20d
+    section Data Collection
+    Data Gathering            :02-01, 25d
+    Data Preprocessing        :02-15, 20d
+    section Analysis
+    GIS Analysis              :03-01, 30d
+    Results Interpretation    :03-15, 20d
+    section Delivery
+    Website Development       :03-20, 15d
+    Poster Creation           :04-01, 10d
+    Final Presentation        :04-14, 1d
+```
+
+
+## Navigate the Project
+
+- [Project Proposal](pages/proposal.qmd) - Motivation, objectives, and project scope
+- [Methodology](pages/methodology.qmd) - Detailed GIS analysis methods and workflow
+- [Results](pages/results.qmd) - Maps, visualizations, and key findings
+- [About Us](pages/about.qmd) - Team background and contributions
