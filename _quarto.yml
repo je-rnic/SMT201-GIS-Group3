@@ -4,16 +4,24 @@ project:
   output-dir: _site
 
 website:
-  title: "GIS Group3"
+  title: "SolarScape"
   navbar:
     left:
-      - href: index.qmd
-        text: Home
+      - href: pages/proposal.qmd
+        text: Proposal
+      - href: pages/methodology.qmd
+        text: Methodology
+      - href: pages/results.qmd
+        text: Results and Discussion
+      - href: pages/lessons.qmd
+        text: Lessons Learnt
 
 format:
   html:
-    theme: cosmo
+    theme: litera
+    css: styles.css
     toc: true
-
+    
 execute:
   freeze: auto
+  

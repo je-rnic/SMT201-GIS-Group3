@@ -1,0 +1,8 @@
+---
+title: "Methodology"
+format: html
+---
+
+Methodology Page
+
+---
