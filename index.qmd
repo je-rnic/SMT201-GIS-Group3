@@ -1,6 +1,6 @@
 ---
-title: "SolarScape: Optimizing Solar Farm Locations with GIS"
-subtitle: "A Geospatial Analysis Project for Urban Sustainability"
+title: "SolarScape: Optimizing Solar Farm Locations"
+subtitle: "An SMT201 Geospatial Analysis Project for Urban Planning and Sustainability"
 author: "Group 3 - GIS for Urban Planning"
 date: last-modified
 ---
@@ -42,25 +42,7 @@ The findings from our project provide valuable insights for urban planners, ener
 
 ## Project Timeline
 
-```{mermaid}
-gantt
-    title SolarScape Project Schedule
-    dateFormat  MM-DD
-    section Planning
-    Project Initialization    :01-15, 15d
-    Literature Review         :01-20, 20d
-    section Data Collection
-    Data Gathering            :02-01, 25d
-    Data Preprocessing        :02-15, 20d
-    section Analysis
-    GIS Analysis              :03-01, 30d
-    Results Interpretation    :03-15, 20d
-    section Delivery
-    Website Development       :03-20, 15d
-    Poster Creation           :04-01, 10d
-    Final Presentation        :04-14, 1d
-```
-
+![](/images/solar-farm-banner.jpg)
 
 ## Navigate the Project
 

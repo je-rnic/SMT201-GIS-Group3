@@ -10,27 +10,24 @@ website:
   navbar:
     background: dark
     left:
-      - href: index.qmd
+      - href: index.html
         text: Overview
-      - href: pages/proposal.qmd
+      - href: pages/proposal.html
         text: Proposal
-      - href: pages/methodology.qmd
+      - href: pages/methodology.html
         text: Methodology
-      - href: pages/results.qmd
+      - href: pages/results.html
         text: Results and Discussion
-      - href: pages/lessons.qmd
+      - href: pages/lessons.html
         text: Lessons Learnt
-      - href: pages/poster.qmd
+      - href: pages/poster.html
         text: Poster
-      - href: pages/report.qmd
+      - href: pages/report.html
         text: Report
     
-    
-
 format:
   html:
-    theme: litera
-    css: styles.css
+    theme: [litera,styles.scss]
     toc: true
     
 execute:
