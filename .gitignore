@@ -3,4 +3,5 @@ _site/
 .Rproj.user/
 *.log
 /.quarto/
-.DS_Store
+_quarto_internal_scss_error.scss
+

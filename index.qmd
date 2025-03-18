@@ -1,14 +1,15 @@
 ---
-title: "SolarScape: Optimizing Solar Farm Locations"
+title: "SolarScape: Optimising Solar Farm Locations"
 subtitle: "An SMT201 Geospatial Analysis Project for Urban Planning and Sustainability"
-author: "Group 3 - GIS for Urban Planning"
 date: last-modified
 ---
 
-![](/images/solar-farm-banner.jpg)
-
-
 ## Project Overview
+
+
+![](/images/solarscape-high-resolution-logo.png
+)
+
 
 SolarScape is a comprehensive geospatial analysis project focused on optimizing the location of solar farms to maximize energy generation while minimizing environmental and social impacts. Using advanced GIS techniques, our team has developed a multi-criteria evaluation framework to identify ideal sites for solar farm development.
 

@@ -1,12 +1,121 @@
 // SCSS theme file
 
 /*-- scss:defaults --*/
-/* $primary-color: #3498db;
-$secondary-color: #2ecc71; */
+$blue: #476119;
 
 /*-- scss:rules --*/
 
+// Litera 5.3.3
+// Bootswatch
 
+// Variables
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+
+// Navbar
+
+.navbar {
+	font-size: $font-size-sm;
+}
+
+.navbar-title{
+    color: #476119;
+    font-family: 'Cormorant Upright', serif;
+}
+
+/* .navbar-logo{
+    height: 50px;
+    max-height: fit-content;
+} */
+
+// Typography
+
+p {
+	font-family: $font-family-sans-serif;
+}
+
+blockquote {
+	font-style: italic;
+}
+
+footer {
+	font-size: $font-size-sm;
+}
+
+.lead {
+	font-family: $font-family-sans-serif;
+	color: $gray-600;
+}
+
+// Tables
+
+table,
+.table {
+	font-size: $font-size-sm;
+}
+
+// Navs
+
+.nav,
+.breadcrumb,
+.pagination {
+	font-size: $font-size-sm;
+}
+
+
+.dropdown-menu {
+	font-size: $font-size-sm;
+}
+
+// Indicators
+
+.alert {
+	font-size: $font-size-sm;
+	color: $white;
+
+	&,
+	p {
+		font-family: $font-family-sans-serif;
+	}
+
+	a,
+	.alert-link {
+		font-weight: 400;
+		color: $white;
+		text-decoration: underline;
+	}
+
+	@each $color, $value in $theme-colors {
+		&-#{$color} {
+			@if $enable-gradients {
+				background: $value
+					linear-gradient($value, mix($body-bg, $value, 15%))
+					repeat-x;
+			} @else {
+				background-color: $value;
+			}
+		}
+	}
+
+	&-light {
+		&,
+		a,
+		.alert-link {
+			color: $body-color;
+		}
+	}
+}
+
+.badge {
+	&.bg-light {
+		color: $dark;
+	}
+}
+
+// Containers
+
+.list-group {
+	font-size: $font-size-sm;
+}
 
 /*-- scss:mixins --*/
 // Add any mixins here

@@ -4,11 +4,17 @@ project:
   output-dir: _site
 
 website:
-  title: "SolarScape"
+  page-navigation: true
+  site-url: "https://solarscape.netlify.app" 
+  repo-url: "https://github.com/je-rnic/SMT201-GIS-Group3"
+  repo-actions: [edit, source, issue]
+  favicon: images/navbar-solarscape-logo2.svg
+
   page-footer:
       center: "Copyright 2025, SolarScape"
   navbar:
-    background: dark
+    logo: images/navbar-solarscape-logo2.svg
+    background: light
     left:
       - href: index.html
         text: Overview
