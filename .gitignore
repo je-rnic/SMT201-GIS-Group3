@@ -2,6 +2,6 @@
 _site/
 .Rproj.user/
 *.log
-/.quarto/
+.quarto/
 _quarto_internal_scss_error.scss
-
+.Rhistory
