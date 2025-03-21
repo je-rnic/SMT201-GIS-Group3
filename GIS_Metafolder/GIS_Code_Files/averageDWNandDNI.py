@@ -1,7 +1,16 @@
 # averageDNIandDWN.py
 
-""" This script processes CSV files containing solar radiation data to calculate the average Direct Normal Irradiance (DNI) and Downward Shortwave Radiation (DWN) for each location. The results are written to an output CSV file.
- """
+""" This script processes CSV files containing solar radiation data to calculate the average Downward Shortwave Radiation (DWN) and average Direct Normal Irradiance (DNI) for each location. The results are written to an output CSV file.
+
+Usage:
+
+1. Place the CSV files to be processed in the Raw_Datasets folder.
+2. Run the script (make sure cd to inside GIS_Code_Files):
+python averageDWNandDNI.py
+3. Output will be written to GIS_Metafolder/Outputs/averageDWNandDNIOutput.csv'
+
+"""
+ 
 
 import csv
 import glob
@@ -47,7 +56,7 @@ def process_csv(file_path):
 
 def main():
     input_folder = '../Raw_Datasets/*.csv'
-    output_file = '../Outputs/averageTempOutput.csv'
+    output_file = '../Outputs/averageDWNandDNIOutput.csv'
     
     with open(output_file, 'w', newline='') as csvfile:
         fieldnames = ['Lat', 'Long', 'Average ALLSKY_SFC_SW_DWN', 'Average ALLSKY_SFC_SW_DNI']
