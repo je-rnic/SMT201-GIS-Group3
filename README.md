@@ -7,3 +7,4 @@ This is a simple Quarto project deployed using Netlify and GitHub Actions.
 2. Install Quarto
 3. Run `quarto render`
 4. Deploy using Netlify
+
