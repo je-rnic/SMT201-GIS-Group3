@@ -1,8 +1,57 @@
 ---
-title: "Report"
 format: html
+editor: visual
+bibliography: references.bib
 ---
 
-Report Page
+<!-- # Motivation
+# Project Objective
 
----
+1. Develop a comprehensive GIS-based framework for solar farm site selection
+2. Identify and map optimal locations based on multiple technical and environmental criteria
+3. Quantify potential solar energy generation capacity at identified sites
+4. Analyze the environmental and social implications of proposed locations
+5. Create interactive visualization tools to support planning decisions
+
+# Data 
+# Scope of Work
+# Project Schedule
+ -->
+
+# ---
+
+# Introduction
+
+Over the past decade, solar energy has emerged as the most viable renewable energy source for Singapore. The Singapore Green Plan 2030 targets a solar energy deployment of at least 2 gigawatt-peak (GWp) by 2030 to meet ~3% of projected electricity demand [@greenplan2030], yet the space required for solar farms [@solarfarmspace] are not one where land-limited Singapore can generously afford.
+
+Notably, Sembcorp's floating solar projects have demonstrated the potential of alternative installation methods, expanding solar capacity while providing critical insights into technical and operational challenges of water-based photovoltaic systems [@sembcorp]. Academic work on solar irradiance forecasting and clear-sky modeling in Singapore's tropical climate has further enhanced site selection precision and energy yield predictions [@irradiance2023]. 
+
+These studies collectively underscore that despite spatial limitations, strategic technological innovations and supportive policy measures are crucial for Singapore's transition to a low-carbon economy and long-term energy sustainability.
+
+This report details our approach to using **Multi-Criteria Decision Analysis (MCDA)** methodologies using GIS techniques, to **identify viable locations** for solar farms based on solar radiation, land use, and other infrastructure constraints.
+
+# Objectives
+
+- Identify **highly suitable locations** for solar farm installation in Singapore.  
+- Integrate **geospatial datasets** to perform **spatial analysis** and **MCDA ranking**.  
+- Exclude **unsuitable areas** such as **protected areas, high-rise zones, and natural reserves**.  
+- Provide **data-driven recommendations** for urban planners and policymakers.
+
+# Data Sources & Preprocessing
+
+We used **QGIS** for data integration, preprocessing, and analysis. The primary datasets include:  
+
+- **Solar radiation data** (NASA POWER LARC)  
+- **Land use data** (URA Master Plan 2019)  
+- **Roads and infrastructure** (OpenStreetMap)  
+- **Substation locations** (Extracted from OpenStreetMap API)  
+- **Environmental constraints** (Nature reserves, conservation zones)  
+- **Topographic data** (Slope, Aspect, Digital Elevation Model)
+
+## Data Cleaning & Preparation
+
+To be filled up
+<!-- 1. **Filtering Land Use**: Extracted only **Openspace, Waterbody, and Reserved** land use zones.  
+2. **Proximity Analysis**: Calculated distances from **substations** and **major roads**.  
+3. **Topographic Processing**: Derived **slope and aspect** layers from the **DEM dataset**.  
+4. **Final Dataset**: Combined and clipped layers to retain only **suitable areas**. -->
