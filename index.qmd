@@ -4,50 +4,23 @@ subtitle: "An SMT201 Geospatial Analysis Project for Urban Planning and Sustaina
 date: last-modified
 ---
 
-## Project Overview
-
-
 ![](/images/solarscape-high-resolution-logo.png
 )
 
 
-Solarscape is a comprehensive geospatial analysis project focused on optimizing the location of solar farms to maximize energy generation while minimizing environmental and social impacts. Using advanced GIS techniques, our team has developed a multi-criteria evaluation framework to identify ideal sites for solar farm development.
+## Project Overview
 
-The transition to renewable energy sources is a critical component of sustainable urban planning and climate change mitigation. Solar energy, in particular, offers immense potential but requires careful site selection to ensure economic viability, minimal ecological disruption, and community acceptance. Our project addresses this challenge by developing a data-driven approach to solar farm siting that balances technical, environmental, and social considerations.
+Solarscape is a geospatial analysis project that identifies optimal solar farm locations by integrating multiple criteria such as solar radiation, land use, infrastructure proximity, and environmental constraints. Using **Multi-Criteria Decision Analysis (MCDA)** and QGIS, we developed a **scoring framework** to balance energy generation potential with ecological and social considerations.
 
-Through the integration of multiple geospatial datasets including solar radiation, land use, topography, infrastructure proximity, and environmental sensitivity, we've created a sophisticated model that identifies optimal locations for solar farm development. Our analysis not only highlights prime locations but also quantifies potential energy generation capacity and evaluates potential constraints.
+### Why Site Selection Matters
 
-The findings from our project provide valuable insights for urban planners, energy developers, and policymakers seeking to expand renewable energy infrastructure while preserving ecological integrity and addressing community concerns.
+Solar energy is a key pillar of sustainable urban planning, but poor site selection can lead to high costs, inefficiencies, and environmental harm. Our **MCDA approach** evaluates critical factors—including **terrain aspect, slope, proximity to substations and roads**—to determine the best possible sites while avoiding **protected areas, tree conservation zones, and nature reserves**.
 
-[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd) | [Download Full Report](report.pdf)
+### Key Insights
 
-## Key Objectives
+- **Optimal sites**: Identified using GIS-based spatial analysis with URA Master Plan 2019 data.
+- **Energy potential**: Estimated using solar radiation data from NASA’s POWER LARC.
+- **Constraints**: Excluded high-rise urban areas, natural reserves, and offshore islands.
+- **Decision-making framework**: Applied **quantitative MCDA scoring** with suitability thresholds.
 
-1. Develop a comprehensive GIS-based framework for solar farm site selection
-2. Identify and map optimal locations based on multiple technical and environmental criteria
-3. Quantify potential solar energy generation capacity at identified sites
-4. Analyze the environmental and social implications of proposed locations
-5. Create interactive visualization tools to support planning decisions
-
-## Team Members
-
-:::: {.columns}
-
-::: {.column width="100%"}
-- **Toh Rui Chen** - Student
-- **Yeo Jun Zhi, Jernic** - Student
-- **Chamus Chew Yat Weng** - Student
-:::
-
-::::
-
-## Project Timeline
-
-![](/images/solar-farm-banner.jpg)
-
-## Navigate the Project
-
-- [Project Proposal](pages/proposal.qmd) - Motivation, objectives, and project scope
-- [Methodology](pages/methodology.qmd) - Detailed GIS analysis methods and workflow
-- [Results](pages/results.qmd) - Maps, visualizations, and key findings
-- [About Us](pages/about.qmd) - Team background and contributions
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd)

@@ -3,7 +3,44 @@ title: "Methodology"
 format: html
 ---
 
-Methodology Page
+# Methodology
+
+Our analysis follows a **Multi-Criteria Decision Analysis (MCDA)** approach to rank potential sites.  
+
+### **Step 1: Defining Suitability Criteria**
+We evaluated each site based on **four key factors**:  
+- **Aspect (Sun exposure based on direction)**  
+- **Slope (Flat or gentle slopes preferred)**  
+- **Proximity to substations (Lower transmission costs for closer sites)**  
+- **Proximity to roads (Easier transportation & maintenance access)**  
+
+### **Step 2: Assigning Weights & Scores**
+Each factor was assigned a **suitability score (1-5)**. The final suitability score was computed using a weighted overlay approach.
+
+### **Step 3: Applying Constraints**
+- **Excluded** natural reserves, tree conservation areas, and offshore islands.  
+- Applied **threshold-based filtering** to remove areas below **50% suitability score**.  
+
+# Results & Findings
+
+- The **highest-scoring areas** were in **[specific regions, based on your map results]**.  
+- Some **unexpected patterns** emerged due to weight distributions in the MCDA.  
+- Further refinements may be needed, especially in **aspect weighting**.
+
+# Limitations
+
+- **Data accuracy**: Some datasets, especially **substation locations**, may contain missing information.  
+- **Weighting sensitivity**: Small changes in scoring weights significantly affect the results.  
+- **Policy constraints**: Future changes in land use zoning may impact site feasibility.  
+
+# Conclusion & Recommendations
+
+Our GIS-based **MCDA framework** provides a **systematic approach** for identifying suitable solar farm locations. Future work could include:  
+- Incorporating **real-world energy yield simulations**.  
+- Refining **MCDA weighting** based on **expert feedback**.  
+- Evaluating **policy and economic constraints** for large-scale deployment.
+
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3)  
 
 
 ---
