@@ -3,7 +3,8 @@ title: "Methodology"
 format: html
 ---
 
-# Methodology
+## Data Cleaning & Preparation
+
 
 Our analysis follows a **Multi-Criteria Decision Analysis (MCDA)** approach to rank potential sites.  
 
@@ -41,6 +42,3 @@ Our GIS-based **MCDA framework** provides a **systematic approach** for identify
 - Evaluating **policy and economic constraints** for large-scale deployment.
 
 [Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3)  
-
-
----

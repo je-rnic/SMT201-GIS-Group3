@@ -1,26 +1,12 @@
 ---
+title: "Report"
 format: html
-editor: visual
 bibliography: references.bib
+
 ---
 
-<!-- # Motivation
-# Project Objective
 
-1. Develop a comprehensive GIS-based framework for solar farm site selection
-2. Identify and map optimal locations based on multiple technical and environmental criteria
-3. Quantify potential solar energy generation capacity at identified sites
-4. Analyze the environmental and social implications of proposed locations
-5. Create interactive visualization tools to support planning decisions
-
-# Data 
-# Scope of Work
-# Project Schedule
- -->
-
-# ---
-
-# Introduction
+# Introduction and Motivation
 
 Over the past decade, solar energy has emerged as the most viable renewable energy source for Singapore. The Singapore Green Plan 2030 targets a solar energy deployment of at least 2 gigawatt-peak (GWp) by 2030 to meet ~3% of projected electricity demand [@greenplan2030], yet the space required for solar farms [@solarfarmspace] are not one where land-limited Singapore can generously afford.
 
@@ -37,21 +23,64 @@ This report details our approach to using **Multi-Criteria Decision Analysis (MC
 - Exclude **unsuitable areas** such as **protected areas, high-rise zones, and natural reserves**.  
 - Provide **data-driven recommendations** for urban planners and policymakers.
 
-# Data Sources & Preprocessing
+# Data
 
-We used **QGIS** for data integration, preprocessing, and analysis. The primary datasets include:  
+We used **QGIS 3.40.2** for data integration, preprocessing, and analysis. The primary datasets include:  
 
-- **Solar radiation data** (NASA POWER LARC)  
 - **Land use data** (URA Master Plan 2019)  
-- **Roads and infrastructure** (OpenStreetMap)  
-- **Substation locations** (Extracted from OpenStreetMap API)  
-- **Environmental constraints** (Nature reserves, conservation zones)  
 - **Topographic data** (Slope, Aspect, Digital Elevation Model)
+- **Environmental data** (Temperature)
+- **Substation locations** (Extracted from OpenStreetMap API)
+- **Roads and infrastructure** (OpenStreetMap)  
+- **Solar radiation data** (NASA POWER LARC)  
 
-## Data Cleaning & Preparation
 
-To be filled up
-<!-- 1. **Filtering Land Use**: Extracted only **Openspace, Waterbody, and Reserved** land use zones.  
-2. **Proximity Analysis**: Calculated distances from **substations** and **major roads**.  
-3. **Topographic Processing**: Derived **slope and aspect** layers from the **DEM dataset**.  
-4. **Final Dataset**: Combined and clipped layers to retain only **suitable areas**. -->
+# Scope of Work
+
+## Site Suitability Analysis
+
+- Identification and extraction of viable areas on Singapore's mainland by excluding restricted zones (nature reserves, tree conservation areas, protected areas, military zones etc.)
+- Development of suitability criteria based on physical, environmental, and infrastructural factors
+
+
+## Data Processing and Integration
+
+- Preprocessing of geospatial data from multiple sources (URA Master Plan 2019, OpenStreetMap, NPARKS)
+- Rasterization of vector layers for consistent analysis
+- Generation of derived datasets (slope, aspect, proximity maps)
+- Standardization of criteria values to a common scale (0-100) to facilitate comparison
+
+
+## Multi-Criteria Decision Analysis
+
+- Implementation of standardization-first approach for proximity, slope, and temperature factors
+- Reclassification of standardized values using structured scoring tables
+- Integration of AHP weightages for balanced criteria evaluation
+- Calculation of composite suitability scores and identification of optimal sites
+
+
+## Visualization and Interpretation
+
+- Creation of suitability maps highlighting the most viable locations (top quartile)
+- Analysis of spatial patterns and key determinants of suitability
+- Identification of trade-offs between competing factors (e.g., proximity to infrastructure vs. environmental conditions)
+
+
+## Validation and Refinement
+
+- Sensitivity analysis of AHP weightings to assess robustness
+- Refinement of methodology based on preliminary results and expert feedback
+- Comparison of results using different analytical approaches (standardize-then-classify vs. classify-then-standardize)
+
+
+
+# Project Schedule (Gantt Chart)
+
+![](/images/solarscape-high-resolution-logo.png
+)
+
+
+
+Refer to [Methodology](methodology.qmd) for a full step-by-step guide to our project set-up.
+
+
