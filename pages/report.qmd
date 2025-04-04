@@ -37,6 +37,9 @@ We used **QGIS 3.40.2** for data integration, preprocessing, and analysis. The p
 
 # Scope of Work
 
+Refer to [Methodology](methodology.qmd) for a full step-by-step guide to our project set-up.
+
+
 ## Site Suitability Analysis
 
 - Identification and extraction of viable areas on Singapore's mainland by excluding restricted zones (nature reserves, tree conservation areas, protected areas, military zones etc.)
@@ -78,9 +81,5 @@ We used **QGIS 3.40.2** for data integration, preprocessing, and analysis. The p
 
 ![](/images/solarscape-high-resolution-logo.png
 )
-
-
-
-Refer to [Methodology](methodology.qmd) for a full step-by-step guide to our project set-up.
 
 

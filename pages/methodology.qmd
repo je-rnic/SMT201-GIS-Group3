@@ -3,42 +3,79 @@ title: "Methodology"
 format: html
 ---
 
-## Data Cleaning & Preparation
+# 1. Getting Started
+
+## 1.1 Creating the Project Folder
+
+Create a new project folder called GIS_Metafolder or any name of your choice. In here we will save the raw datasets to be processed before it's added into our main QGIS project layers.
+
+Create a new sub-folder called QGIS or any name of your choice. This will be where you save the direct project draft file and other data package related documents.
+
+## 1.2 Downloading the Data Sets
+
+The datasets we've used are:
+
+ENTER LINKS HERE
 
 
-Our analysis follows a **Multi-Criteria Decision Analysis (MCDA)** approach to rank potential sites.  
+1. Download the data sets,
+2. Place them in the newly created GIS_Metafolder sub-folder, and
+3. Unzip them
 
-### **Step 1: Defining Suitability Criteria**
-We evaluated each site based on **four key factors**:  
-- **Aspect (Sun exposure based on direction)**  
-- **Slope (Flat or gentle slopes preferred)**  
-- **Proximity to substations (Lower transmission costs for closer sites)**  
-- **Proximity to roads (Easier transportation & maintenance access)**  
 
-### **Step 2: Assigning Weights & Scores**
-Each factor was assigned a **suitability score (1-5)**. The final suitability score was computed using a weighted overlay approach.
+## 1.3 Start a new QGIS Project
 
-### **Step 3: Applying Constraints**
-- **Excluded** natural reserves, tree conservation areas, and offshore islands.  
-- Applied **threshold-based filtering** to remove areas below **50% suitability score**.  
+1. Launch QGIS 3.40.2 
+2. Start a new QGIS project.
+3. Save the project in GIS_Metafolder/QGIS folder. Name the project any name of your choice.
 
-# Results & Findings
+# 2. Extration of Areas
 
-- The **highest-scoring areas** were in **[specific regions, based on your map results]**.  
-- Some **unexpected patterns** emerged due to weight distributions in the MCDA.  
-- Further refinements may be needed, especially in **aspect weighting**.
+## 2.1 Geoprocessing MP19 Subzone
 
-# Limitations
+### 2.1.1 Vector Difference Tool
 
-- **Data accuracy**: Some datasets, especially **substation locations**, may contain missing information.  
-- **Weighting sensitivity**: Small changes in scoring weights significantly affect the results.  
-- **Policy constraints**: Future changes in land use zoning may impact site feasibility.  
+Ran vector difference tool to remove areas that are marked as 
+	1 Tree conservation zone (NPARKS)
+	2 Nature Reserve (NPARKS)
+	3 Protected Area (MHA)
 
-# Conclusion & Recommendations
 
-Our GIS-based **MCDA framework** provides a **systematic approach** for identifying suitable solar farm locations. Future work could include:  
-- Incorporating **real-world energy yield simulations**.  
-- Refining **MCDA weighting** based on **expert feedback**.  
-- Evaluating **policy and economic constraints** for large-scale deployment.
+## 2.2 Analysis of Aspatial Data
+
+### 2.2.1 Python Processing of Temperature Data
+
+## 2.3 Combining of Temperature to Subzone Boundaries
+
+# 3. Proximity Analysis
+
+## 3.1 Extracting Substation Locations
+
+## 3.2 Slope
+
+## 3.3 Aspect 
+
+## 3.3 Rasterising layers
+
+## 3.4 Creating proximity map for Roads and Substation
+
+# 4. Analytical Hierachy Process
+
+## 4.1 Criteria
+
+## 4.2 Perform Reclassification
+
+### 4.2.1 Slope
+
+### 4.2.2 Proximity to Roads
+
+### 4.2.3 Aspect
+
+### 4.2.4 Proximity to Substations
+
+## 4.3 Tweaking and Refinements
+
+
+
 
 [Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3)  

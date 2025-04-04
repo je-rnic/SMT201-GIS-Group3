@@ -3,6 +3,15 @@ title: "Results"
 format: html
 ---
 
-Results and DiscussionPage
+Results and Discussion Page
 
----
+
+
+# Results & Findings
+
+
+# Limitations
+
+
+
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3)  

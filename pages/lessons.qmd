@@ -5,4 +5,12 @@ format: html
 
 Lessons Learnt Page
 
----
+
+# Conclusion & Recommendations
+
+Our GIS-based **MCDA framework** provides a **systematic approach** for identifying suitable solar farm locations. Future work could include:  
+- Incorporating **real-world energy yield simulations**.  
+- Refining **MCDA weighting** based on **expert feedback**.  
+- Evaluating **policy and economic constraints** for large-scale deployment.
+
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3)  
