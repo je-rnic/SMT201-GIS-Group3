@@ -29,53 +29,196 @@ ENTER LINKS HERE
 2. Start a new QGIS project.
 3. Save the project in GIS_Metafolder/QGIS folder. Name the project any name of your choice.
 
-# 2. Extration of Areas
+# 2. Extraction of Areas
 
 ## 2.1 Geoprocessing MP19 Subzone
 
+ENTER MP19 Processing
+
 ### 2.1.1 Vector Difference Tool
 
-Ran vector difference tool to remove areas that are marked as 
-	1 Tree conservation zone (NPARKS)
-	2 Nature Reserve (NPARKS)
-	3 Protected Area (MHA)
+1. Extract the Mainland Subzone:
+
+    - Begin by isolating the MP19 subzone from the dataset.
+    - Filter out open spaces, reserved areas, water bodies, and remove surrounding islands (e.g., Tekong, Ubin) to retain only the main island of Singapore.
+
+2. Remove Restricted Areas:
+
+    - Use the Vector Difference tool to subtract polygons representing:
+
+        - Tree conservation zones (NPARKS)
+        - Nature reserves (NPARKS)
+        - Protected areas (MHA)
+
+3. Output:
+
+    - The resulting layer, named viable_areas, will include only those areas that are available and allowed for solar panel installation.
 
 
 ## 2.2 Analysis of Aspatial Data
 
 ### 2.2.1 Python Processing of Temperature Data
 
+1. Temperature Data Extraction:
+
+    - Use Python scripting within QGIS or an external Python environment to process the temperature dataset.
+    - Calculate the average temperature for each weather station over a period of 180 days.
+
+2. Output:
+
+    - Generate a point layer representing weather stations with an attribute field for average temperature.
+
+
 ## 2.3 Combining of Temperature to Subzone Boundaries
+
+1. Spatial Join:
+    - Link the temperature point layer to the MP19 subzone polygons by performing a spatial join.
+    - Ensure each polygon inherits the nearest weather station’s average temperature.
+
+2. Validation:
+    - Verify that each polygon now includes an attribute for average temperature to be used in later analysis steps.
+
+
 
 # 3. Proximity Analysis
 
 ## 3.1 Extracting Substation Locations
 
+1. API Extraction:
+    - Use the OpenStreetMap API (or an equivalent source) to extract the locations of all substations in Singapore.
+
+2. Resulting Layer:
+    - Save the substation locations as a point layer. This will be used for proximity analysis in later steps.
+
+
 ## 3.2 Slope
 
+1. DEM Analysis:
+    - Load a Digital Elevation Model (DEM) for the study area.
+
+2. Generate Slope Layer:
+    - Use the QGIS Slope tool (typically found under Raster > Terrain Analysis) to derive a slope layer from the DEM.
+
+3. Output:
+    - The slope layer is crucial for determining areas that are more suitable for solar panel installations.
+
+
 ## 3.3 Aspect 
+1. Generate Aspect Layer:
+    - With the DEM loaded, apply the QGIS Aspect Tool found under Raster > Analysis > Aspect.
+    - This tool calculates the direction that slopes face, which can influence solar efficiency.
+
+2. Output:
+    - Save the resulting aspect layer for further processing.
 
 ## 3.3 Rasterising layers
 
+1. Raster Conversion:
+    - Convert key vector layers (e.g., substations, roads, and other critical infrastructure) into raster format.
+
+2. Method:
+    - Use QGIS’s Rasterize (Vector to Raster) tool, ensuring that the resolution and alignment match your other spatial datasets.
+
+3. Purpose:
+    - Rasterizing these layers facilitates the overlay and proximity analyses in later steps.
+
+
 ## 3.4 Creating proximity map for Roads and Substation
+1. Proximity Analysis
+    - For each rasterized vector layer (roads and substations), generate a proximity map.
+    - Use QGIS’s Proximity (Raster Distance) tool to compute distance from each pixel to the nearest feature (road or substation).
+
+2. Output:
+    - These proximity maps will be reclassified and weighted as part of the multi-criteria decision analysis (MCDA).
+
+
 
 # 4. Analytical Hierachy Process
 
 ## 4.1 Criteria
+The criteria for solar farm suitability assessment include:
+
+    - Slope: Areas with gentle slopes are preferable.
+    - Aspect: South-facing slopes may be more beneficial depending on solar path.
+    - Proximity to Roads: Accessibility is a key factor.
+    - Proximity to Substations: Easier connection to the grid is desired.
+    - Temperature: As higher temperatures may affect solar efficiency, reclassifying temperature data ensures accurate assessments.
+
+
 
 ## 4.2 Perform Reclassification
 
 ### 4.2.1 Slope
+1. Define Classes:
+
+    - Based on the slope values from the DEM, reclassify the slope layer into classes (e.g., low, moderate, high) using QGIS’s Reclassify by Table tool.
+
+2. Criteria:
+
+    - Assign higher suitability scores to areas with lower slopes.
+
 
 ### 4.2.2 Proximity to Roads
 
+1. Reclassification:
+
+    - Use the proximity map for roads and reclassify the distance values into suitability classes.
+
+2. Scoring:
+
+    - Areas closer to major roads receive higher scores, as they indicate better accessibility.
+
 ### 4.2.3 Aspect
+
+1. Reclassification:
+
+    - Analyze the aspect layer to determine which orientations receive higher solar exposure.
+
+2. Adjustment:
+
+    - Reclassify the aspect values so that slopes facing the optimal direction for solar capture (as per your local conditions and guidelines) receive a higher suitability score.
+
 
 ### 4.2.4 Proximity to Substations
 
+1. Reclassification:
+
+    - Similar to roads, reclassify the proximity map for substations into classes.
+
+2. Scoring:
+
+    - Areas closer to substations are prioritized due to ease of connecting to the electrical grid.
+
 ## 4.3 Tweaking and Refinements
 
+1. Weight Adjustment via AHP:
 
+    - Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the criteria. Initially, the aspect criterion may have been over-weighted, so adjust the weights to balance the influence of all layers.
+
+2. Incorporating Temperature:
+
+    - Rasterize the viable_areas layer to incorporate the average temperature attribute.
+
+    - Reclassify the temperature values using the following scale:
+
+Temperature Range (°C)	Score	Rationale
+26.5–26.9	4	Ideal – Peak efficiency (0% loss)
+27.0–27.4	3	Excellent – Minimal loss (0.5–1%/°C)
+27.5–27.9	2	Good – Moderate loss (1–1.5%/°C)
+28.0–28.2	1	Fair – Significant loss (1.5–2%/°C)
+
+
+3. Final MCDA Map Creation:
+
+    - Overlay all reclassified layers using weighted overlay analysis to produce a final Multi-Criteria Decision Analysis (MCDA) map.
+
+    - Set a threshold (for example, 50% score or a value of 0.37 in our case) to delineate areas considered suitable for solar farm development.
+
+4. Validation and Iteration:
+
+    - Review the MCDA output. If areas that are classified as suitable (green) or unsuitable (red) do not align with realistic expectations, iteratively refine the weights and reclassification schemes.
+
+    - Consider additional factors or alternative reclassification thresholds until the output map reliably indicates viable areas for solar panel installations.
 
 
 [Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3)  
