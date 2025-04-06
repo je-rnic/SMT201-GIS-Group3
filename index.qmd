@@ -21,3 +21,5 @@ Solarscape is a geospatial analysis project that identifies optimal solar farm l
 - **Decision-making framework**: Applied **quantitative MCDA scoring** with suitability thresholds.
 
 [Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd)
+
+

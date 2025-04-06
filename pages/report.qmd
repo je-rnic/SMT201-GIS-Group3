@@ -27,12 +27,26 @@ This report details our approach to using **Multi-Criteria Decision Analysis (MC
 
 We used **QGIS 3.40.2** for data integration, preprocessing, and analysis. The primary datasets include:  
 
-- **Land use data** (URA Master Plan 2019)  
-- **Topographic data** (Slope, Aspect, Digital Elevation Model)
-- **Environmental data** (Temperature)
-- **Substation locations** (Extracted from OpenStreetMap API)
-- **Roads and infrastructure** (OpenStreetMap)  
-- **Solar radiation data** (NASA POWER LARC)  
+## Downloaded from [data.gov.sg](https://data.gov.sg/)
+
+- [Master Plan 2019 Land Use layer](https://data.gov.sg/collections/1646/view):  
+  - This dataset provides detailed information on land use classifications as per the 2019 Master Plan.
+
+- [Master Plan 2019 Subzone Boundary (No Sea)](https://data.gov.sg/collections/1749/view):  
+  - This layer delineates subzone boundaries excluding maritime areas, as outlined in the 2019 Master Plan.
+
+## Downloaded from [USGS Earth Explorer](https://earthexplorer.usgs.gov/): 
+
+- [Shuttle Radar Topography Mission (SRTM)](https://gisgeography.com/srtm-shuttle-radar-topography-mission/):
+  - 30-meter digital elevation model data. This high-resolution topographic data is crucial for terrain analysis and modeling. The STRM data set is already provided in the hands-on exercise data folder by the professor
+
+## Downloaded from Malaysia, Singapore, and Brunei at [Geofabrik download server](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html):
+  - Roads and buildings data from OpenStreetMap (OSM) data sets. These datasets include vector data representing road networks and building footprints, sourced from the collaborative OpenStreetMap project.      
+
+## Getting location of [Substations](https://overpass-turbo.eu/): 
+  - A query script (code located in substation_query.txt) was ran at openstreetmap overpass turbo api site, to retrieve the the substation location in Singapore, before exporting as KML. The KML contains a polygon and point layer, and the polygon was further converted to point using centroid and combined with the point layer using merge vector layers. All field except for Name, Fid, addr_postcode and addr_street was removed, before saving in geopackage as substation_location
+
+
 
 
 # Scope of Work
