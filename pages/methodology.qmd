@@ -13,9 +13,7 @@ Create a new sub-folder called QGIS or any name of your choice. This will be whe
 
 ## 1.2 Downloading the Data Sets
 
-The datasets we've used are:
-
-ENTER LINKS HERE
+The datasets we've used can be found at [Data](report.qmd#data)
 
 
 1. Download the data sets,
@@ -137,12 +135,11 @@ ENTER MP19 Processing
 
 ## 4.1 Criteria
 The criteria for solar farm suitability assessment include:
-
-    - Slope: Areas with gentle slopes are preferable.
-    - Aspect: South-facing slopes may be more beneficial depending on solar path.
-    - Proximity to Roads: Accessibility is a key factor.
-    - Proximity to Substations: Easier connection to the grid is desired.
-    - Temperature: As higher temperatures may affect solar efficiency, reclassifying temperature data ensures accurate assessments.
+- Slope: Areas with gentle slopes are preferable.
+- Aspect: South-facing slopes may be more beneficial depending on solar path.
+- Proximity to Roads: Accessibility is a key factor.
+- Proximity to Substations: Easier connection to the grid is desired.
+- Temperature: As higher temperatures may affect solar efficiency, reclassifying temperature data ensures accurate assessments.
 
 
 

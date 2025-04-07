@@ -1,0 +1,113 @@
+---
+title: "Meeting Minutes"
+format: html
+---
+
+## Meeting Minutes: Initial Project Discussion
+
+**Date:** March 17, 2025  
+**Time:** 4:00 PM - 6:00 PM  
+**Attendees:** TOH Rui Chen, Chamus CHEW Yat Weng, Jernic YEO Jun Zhi  
+**Subject:** Project Scoping for QGIS Solar Farm Analysis Assignment
+
+### 1. Project Focus Decision
+
+#### Initial Options Considered:
+- Wind Farm Analysis
+- Solar Farm Analysis
+
+#### Points of Discussion:
+- **Wind Farm Limitations:**
+  - Limited existing wind turbine installations in Singapore
+  - Space constraints for new installations
+  - Inconsistent wind flow patterns in Singapore
+  - Limited local data availability
+
+- **Solar Farm Advantages:**
+  - Greater prevalence of existing solar installations (observed on HDB rooftops)
+  - Better data availability for solar installation capacities and locations
+  - More opportunities for land use optimization analysis in QGIS
+  - Alignment with Singapore's renewable energy initiatives
+
+#### Decision:
+After discussion, the team unanimously agreed to focus on Solar Farm analysis as the primary project direction.
+
+### 2. Data Requirements and Acquisition
+
+#### Required Datasets:
+- **Land Use Data:**
+  - Extract polygons with LU_DESC of Openspace, Waterbody & Reserved site
+  - Avoid residential, special use, and built-up areas
+  - Exclude natural reserves and parks
+
+- **Topographical Data:**
+  - Slope & DEM/aspect data from hands-on exercise
+  - Solar radiance data from NASA's POWER LARC website (single point)
+
+- **Infrastructure Data:**
+  - Roads from OpenStreetMap (OSM), clipped with Singapore land use layer
+  - Substation/electrical room locations via OpenStreetMap API (export as KML)
+  - Environmental data (sunlight/temperature)
+
+#### Data Collection Assignments:
+- Rui Chen and Chamus to research and gather the identified datasets
+- Team to refine specific data requirements as project progresses
+
+### 3. Project Technical Setup
+
+#### Requirements:
+- GitHub repository for version control and collaboration
+- A1 poster for presentation
+
+#### GitHub Workflow Discussion:
+- Jernic explained and introduced GitHub workflow version control for team members:
+  - Capability to track various file types (code, Excel, CSV, etc.)
+  - Basic workflow process: pull → make changes → commit → push
+  - Importance of pulling before making changes to maintain synchronization
+  - Recommendation to use GitHub Desktop application for easier management
+
+#### Points of Disagreement and Resolution:
+
+1. **Repository Structure:**
+   - Rui Chen suggested organizing by data types
+   - Chamus proposed organizing by project phases
+   - **Resolution:** Agreed to use a hybrid approach with main folders for phases and subfolders for data types
+
+2. **Website Platform:**
+   - Jernic advocated for Quarto for its integration with R and markdown
+   - Chamus suggested using WordPress for simpler management
+   - **Resolution:** Selected Quarto to comply with assignment requirements and better technical documentation capabilities
+
+3. **Data Analysis Approach:**
+   - Rui Chen recommended focusing on available open spaces first
+   - Jernic suggested a comprehensive approach analyzing all potential land types
+   - **Resolution:** Decided to start with open spaces for initial analysis but develop a framework that could incorporate other land types if time permits
+
+### 4. Division of Labor
+
+#### Task Assignments:
+- **Jernic:**
+  - Set up the Quarto website
+  - Configure GitHub repository and workflow
+  - Develop visualization components
+
+- **Rui Chen:**
+  - Lead technical implementation of QGIS analysis
+  - Gather and process land use and topographical data
+  - Research solar efficiency parameters
+
+- **Chamus:**
+  - Collect infrastructure and environmental data
+  - Process and configure scripts for data collection
+  - Documentation and report writing
+
+
+#### Assignment Considerations:
+- Distribution based on technical strengths and previous experience
+- Balanced workload across team members
+- Cross-training opportunities to develop new skills
+
+
+Meeting adjourned at approximately 6:00 PM.
+
+---

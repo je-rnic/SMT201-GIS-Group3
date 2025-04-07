@@ -26,6 +26,10 @@ website:
         text: Lessons Learnt
       - href: pages/poster.html
         text: Poster
+      - href: geoweb/qgis2web_2025_04_07-14_09_11_104108/index.html
+        text: Interactive Map
+      - href: pages/meeting-minutes.html
+        text: Meeting Minutes
     
 format:
   html:

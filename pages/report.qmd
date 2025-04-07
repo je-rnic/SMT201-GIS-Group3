@@ -12,15 +12,15 @@ Over the past decade, solar energy has emerged as the most viable renewable ener
 
 Notably, Sembcorp's floating solar projects have demonstrated the potential of alternative installation methods, expanding solar capacity while providing critical insights into technical and operational challenges of water-based photovoltaic systems [@sembcorp]. Academic work on solar irradiance forecasting and clear-sky modeling in Singapore's tropical climate has further enhanced site selection precision and energy yield predictions [@irradiance2023]. 
 
-These studies collectively underscore that despite spatial limitations, strategic technological innovations and supportive policy measures are crucial for Singapore's transition to a low-carbon economy and long-term energy sustainability.
+These studies collectively underscore that despite spatial limitations, strategic geospatial planning and supportive policy measures are crucial for Singapore's transition to a low-carbon economy and long-term energy sustainability.
 
-This report details our approach to using **Multi-Criteria Decision Analysis (MCDA)** methodologies using GIS techniques, to **identify viable locations** for solar farms based on solar radiation, land use, and other infrastructure constraints.
+This report details our approach to using **Multi-Criteria Decision Analysis (MCDA)** methodologies using GIS techniques, to identify viable locations for solar farms based on solar radiation, land use, and other infrastructure constraints.
 
 # Objectives
 
-- Identify **highly suitable locations** for solar farm installation in Singapore.  
+- Scope out initial **suitable locations** for solar farm installation in Singapore.  
+- Filter out **non-ideal locations** such as **protected areas, high-rise zones, and natural reserves etc.**.  
 - Integrate **geospatial datasets** to perform **spatial analysis** and **MCDA ranking**.  
-- Exclude **unsuitable areas** such as **protected areas, high-rise zones, and natural reserves**.  
 - Provide **data-driven recommendations** for urban planners and policymakers.
 
 # Data
@@ -40,11 +40,15 @@ We used **QGIS 3.40.2** for data integration, preprocessing, and analysis. The p
 - [Shuttle Radar Topography Mission (SRTM)](https://gisgeography.com/srtm-shuttle-radar-topography-mission/):
   - 30-meter digital elevation model data. This high-resolution topographic data is crucial for terrain analysis and modeling. The STRM data set is already provided in the hands-on exercise data folder by the professor
 
-## Downloaded from Malaysia, Singapore, and Brunei at [Geofabrik download server](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html):
-  - Roads and buildings data from OpenStreetMap (OSM) data sets. These datasets include vector data representing road networks and building footprints, sourced from the collaborative OpenStreetMap project.      
+## Downloaded from [Geofabrik download server](https://download.geofabrik.de/asia/malaysia-singapore-brunei.html):
+  - Roads and buildings data from OpenStreetMap (OSM) Malaysia, Singapore, and Brunei data sets. 
+  - These datasets include vector data representing road networks and building footprints, sourced from the collaborative OpenStreetMap project.      
 
-## Getting location of [Substations](https://overpass-turbo.eu/): 
-  - A query script (code located in substation_query.txt) was ran at openstreetmap overpass turbo api site, to retrieve the the substation location in Singapore, before exporting as KML. The KML contains a polygon and point layer, and the polygon was further converted to point using centroid and combined with the point layer using merge vector layers. All field except for Name, Fid, addr_postcode and addr_street was removed, before saving in geopackage as substation_location
+## Processed from [Overpass Turbo](https://overpass-turbo.eu/): 
+  - We wrote a query script (code located in substation_query.txt) and ran it in the Openstreetmap Overpass Turbo API site, to retrieve the the substation location in Singapore, before exporting as KML.
+  - The KML contains a polygon and point layer, and the polygon was further converted to point using **centroid** and combined with the point layer using **Merge Vector Layers**. 
+  - All fields except for Name, Fid, addr_postcode and addr_street was removed, before saving in geopackage as **substation_location**.
+  - ![](/images/overpass-turbo-script.png)
 
 
 
@@ -54,40 +58,11 @@ We used **QGIS 3.40.2** for data integration, preprocessing, and analysis. The p
 Refer to [Methodology](methodology.qmd) for a full step-by-step guide to our project set-up.
 
 
-## Site Suitability Analysis
-
-- Identification and extraction of viable areas on Singapore's mainland by excluding restricted zones (nature reserves, tree conservation areas, protected areas, military zones etc.)
-- Development of suitability criteria based on physical, environmental, and infrastructural factors
-
-
-## Data Processing and Integration
-
-- Preprocessing of geospatial data from multiple sources (URA Master Plan 2019, OpenStreetMap, NPARKS)
-- Rasterization of vector layers for consistent analysis
-- Generation of derived datasets (slope, aspect, proximity maps)
-- Standardization of criteria values to a common scale (0-100) to facilitate comparison
-
-
-## Multi-Criteria Decision Analysis
-
-- Implementation of standardization-first approach for proximity, slope, and temperature factors
-- Reclassification of standardized values using structured scoring tables
-- Integration of AHP weightages for balanced criteria evaluation
-- Calculation of composite suitability scores and identification of optimal sites
-
-
-## Visualization and Interpretation
-
-- Creation of suitability maps highlighting the most viable locations (top quartile)
-- Analysis of spatial patterns and key determinants of suitability
-- Identification of trade-offs between competing factors (e.g., proximity to infrastructure vs. environmental conditions)
-
-
-## Validation and Refinement
-
-- Sensitivity analysis of AHP weightings to assess robustness
-- Refinement of methodology based on preliminary results and expert feedback
-- Comparison of results using different analytical approaches (standardize-then-classify vs. classify-then-standardize)
+- **Site Suitability Analysis**: Identify viable areas by excluding restricted zones and applying suitability criteria.
+- **Data Processing and Integration**: Preprocess geospatial data, rasterize layers, and generate derived datasets (e.g., slope, aspect, proximity maps).
+- **Multi-Criteria Decision Analysis**: Standardize, reclassify, and weight criteria to calculate composite suitability scores.
+- **Visualization and Interpretation**: Create suitability maps, analyze spatial patterns, and identify trade-offs between factors.
+- **Validation and Refinement**: Perform sensitivity analysis, refine methods, and compare analytical approaches.
 
 
 # Project Admin
@@ -95,113 +70,6 @@ Refer to [Methodology](methodology.qmd) for a full step-by-step guide to our pro
 
 ## Schedule (Gantt Chart)
 
-![](/images/solarscape-high-resolution-logo.png
-)
+![](/images/solarscape-high-resolution-logo.png)
 
 
-## Meeting Minutes: Initial Project Discussion
-
-**Date:** March 17, 2025  
-**Time:** 4:00 PM - 6:00 PM  
-**Attendees:** TOH Rui Chen, Chamus CHEW Yat Weng, Jernic YEO Jun Zhi  
-**Subject:** Project Scoping for QGIS Solar Farm Analysis Assignment
-
-### 1. Project Focus Decision
-
-#### Initial Options Considered:
-- Wind Farm Analysis
-- Solar Farm Analysis
-
-#### Points of Discussion:
-- **Wind Farm Limitations:**
-  - Limited existing wind turbine installations in Singapore
-  - Space constraints for new installations
-  - Inconsistent wind flow patterns in Singapore
-  - Limited local data availability
-
-- **Solar Farm Advantages:**
-  - Greater prevalence of existing solar installations (observed on HDB rooftops)
-  - Better data availability for solar installation capacities and locations
-  - More opportunities for land use optimization analysis in QGIS
-  - Alignment with Singapore's renewable energy initiatives
-
-#### Decision:
-After discussion, the team unanimously agreed to focus on Solar Farm analysis as the primary project direction.
-
-### 2. Data Requirements and Acquisition
-
-#### Required Datasets:
-- **Land Use Data:**
-  - Extract polygons with LU_DESC of Openspace, Waterbody & Reserved site
-  - Avoid residential, special use, and built-up areas
-  - Exclude natural reserves and parks
-
-- **Topographical Data:**
-  - Slope & DEM/aspect data from hands-on exercise
-  - Solar radiance data from NASA's POWER LARC website (single point)
-
-- **Infrastructure Data:**
-  - Roads from OpenStreetMap (OSM), clipped with Singapore land use layer
-  - Substation/electrical room locations via OpenStreetMap API (export as KML)
-  - Environmental data (sunlight/temperature)
-
-#### Data Collection Assignments:
-- Rui Chen and Chamus to research and gather the identified datasets
-- Team to refine specific data requirements as project progresses
-
-### 3. Project Technical Setup
-
-#### Requirements:
-- GitHub repository for version control and collaboration
-- A1 poster for presentation
-
-#### GitHub Workflow Discussion:
-- Jernic explained and introduced GitHub workflow version control for team members:
-  - Capability to track various file types (code, Excel, CSV, etc.)
-  - Basic workflow process: pull → make changes → commit → push
-  - Importance of pulling before making changes to maintain synchronization
-  - Recommendation to use GitHub Desktop application for easier management
-
-#### Points of Disagreement and Resolution:
-
-1. **Repository Structure:**
-   - Rui Chen suggested organizing by data types
-   - Chamus proposed organizing by project phases
-   - **Resolution:** Agreed to use a hybrid approach with main folders for phases and subfolders for data types
-
-2. **Website Platform:**
-   - Jernic advocated for Quarto for its integration with R and markdown
-   - Chamus suggested using WordPress for simpler management
-   - **Resolution:** Selected Quarto to comply with assignment requirements and better technical documentation capabilities
-
-3. **Data Analysis Approach:**
-   - Rui Chen recommended focusing on available open spaces first
-   - Jernic suggested a comprehensive approach analyzing all potential land types
-   - **Resolution:** Decided to start with open spaces for initial analysis but develop a framework that could incorporate other land types if time permits
-
-### 4. Division of Labor
-
-#### Task Assignments:
-- **Jernic:**
-  - Set up the Quarto website
-  - Configure GitHub repository and workflow
-  - Develop visualization components
-
-- **Rui Chen:**
-  - Lead technical implementation of QGIS analysis
-  - Gather and process land use and topographical data
-  - Research solar efficiency parameters
-
-- **Chamus:**
-  - Collect infrastructure and environmental data
-  - Process and configure scripts for data collection
-  - Documentation and report writing
-
-
-#### Assignment Considerations:
-- Distribution based on technical strengths and previous experience
-- Balanced workload across team members
-- Cross-training opportunities to develop new skills
-
-
-Meeting adjourned at approximately 6:00 PM.
