@@ -70,6 +70,6 @@ Refer to [Methodology](methodology.qmd) for a full step-by-step guide to our pro
 
 ## Schedule (Gantt Chart)
 
-![](/images/solarscape-high-resolution-logo.png)
+![](/images/GanttChart.jpg)
 
 

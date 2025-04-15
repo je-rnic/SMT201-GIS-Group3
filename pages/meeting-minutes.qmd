@@ -3,7 +3,7 @@ title: "Meeting Minutes"
 format: html
 ---
 
-## Meeting Minutes: Initial Project Discussion
+## Meeting Minutes 1: Initial Project Discussion
 
 **Date:** March 17, 2025  
 **Time:** 4:00 PM - 6:00 PM  
