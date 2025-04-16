@@ -31,8 +31,6 @@ The datasets we've used can be found at [Data](report.qmd#data)
 
 ## 2.1 Geoprocessing MP19 Subzone
 
-ENTER MP19 Processing
-
 ### 2.1.1 Vector Difference Tool
 
 1. Extract the Mainland Subzone:
