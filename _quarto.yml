@@ -26,7 +26,7 @@ website:
         text: Lessons Learnt
       - href: pages/poster.html
         text: Poster
-      - href: geoweb/index1.html
+      - href: "https://www.youtube.com" 
         text: Interactive Map
       - href: pages/meeting-minutes.html
         text: Meeting Minutes
