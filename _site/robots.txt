@@ -1,1 +1,0 @@
-Sitemap: https://solarscape.netlify.app/sitemap.xml

@@ -4,5 +4,5 @@
 .quarto/
 _quarto_internal_scss_error.scss
 .Rhistory
-
+_site/
 /.quarto/

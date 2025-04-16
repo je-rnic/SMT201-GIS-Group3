@@ -1,8 +1,0 @@
----
-title: "Poster"
-format: html
----
-
-Poster Page
-
----
