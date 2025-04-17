@@ -167,7 +167,7 @@ The datasets we've used can be found at [Data](report.qmd#data)
 
 
     | Aspect Range | Direction | Score | Rationale |
-    |---------|-----------|-------|-----------|
+    |---------|-------|-----|--------------|
     | 0°–72° | North-East | 2 | Captures early morning sunlight but less optimal |
     | 72°–144° | East | 5 | Optimal for capturing morning sunlight, aligning with peak energy demand |
     | 144°–216° | South | 4 | Good exposure; consistent performance throughout the day in equatorial regions |
