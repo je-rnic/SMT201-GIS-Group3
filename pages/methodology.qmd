@@ -143,20 +143,20 @@ The datasets we've used can be found at [Data](report.qmd#data)
     - Temperature: As higher temperatures may affect solar efficiency, reclassifying temperature data ensures accurate assessments.
 
 
-##4.2 Standardization
+## 4.2 Standardization
 
     ![](/images/standard.png){width=400px}
 
     - All layers except for aspect was standardised using the formula above, using raster calculator, into a scale of onto a scale of 0-100
 
 
-##4.3 AHP Weighting
+## 4.3 AHP Weighting
 
     ![](/images/lessons/image6.png)
 
     - Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the criteria. Initially, the aspect criterion may have been over-weighted, so adjust the weights to balance the influence of all layers.
 
-##4.4 Reclassification:
+## 4.4 Reclassification:
 
 1. Aspect:
 
