@@ -1,9 +1,175 @@
 ---
-title: "Results"
+title: "Analysis Findings"
 format: html
 ---
 
+After the MCDA analysis, we found 3 highly suitable areas to install solar farms (*\*Non-exhaustive list*).
 
+## Overview
+
+#### 1\. Lim Chu Kang
+
+* **Area:** 9 km² | **MCDA Score:** 0.89/1.0 (-89%)  
+* **Key Strengths:**  
+  * **Largest Suitable Area:** Provides significant space for large-scale solar deployment.  
+  * **Proximity to Water Bodies:** More areas to tap onto, and can help to provide cooling effects, improving solar panel efficiency (lower temperatures).  
+  * **Strategic Location:** Away from dense urban zones, minimizing social and environmental disruption.
+
+#### 2\. Choa Chu Kang
+
+* **Area:** 1.4 km² | **MCDA Score:** 0.88/1.0 (-88%)  
+* **Key Strengths:**  
+  * **Close Proximity to Substations:** Reduces energy transmission losses and also the cost to transmit electricity (A critical factor in site selection).  
+  * **Adjacent Water Bodies:** Leverages open spaces near water catchment zones, avoiding mainland disruption.
+
+#### 3\. Bahar
+
+* **Area:** 1 km² | **MCDA Score:** 0.88/1.0 (-88%)  
+* **Key Strengths:**  
+  * **Low Slope Grounds:** Reduces installation costs and improves solar panel orientation (aspect).  
+  * **Distanced from High-Rise Residential Areas:** Minimizes shading risks and land-use conflicts.  
+  * **Moderate Proximity to Roads:** Facilitates maintenance access while avoiding urban congestion.
+
+
+
+### Why These Areas Were Shortlisted
+
+- 1. **High MCDA Scores:** Based on our analysis, these 3 areas tend to have the highest MCDA scores, with each of them having one of the highest density of suitable area pixels (blue color) compared to the other zones. In other words, the 3 areas generally fulfil MCDA criteria  
+   - a. Close proximity to substation  
+   - b. Aspect facing east/west  
+   - c. Low presence of slope  
+   - d. Low temperature area
+
+	  *\* Note: This is with respect to other areas, as the data are standardized. Hence, good scores generally points to the area being more suitable than other areas, but does not guarantee to be the perfect area.*
+
+
+Other than the primary MCDA criterias, these areas also happen to have these plus points:
+
+- 2. **Close proximity to water bodies**  
+   - a. **Ability to tap onto more area:** Proximity to water bodies would provide more areas to tap onto, without causing any further land disruptions.  
+   - b. **Cooling Benefits:** Proximity to water bodies could also lower ambient temperatures, maximising efficiency in solar panels.  
+
+- 3. **Minimized Urban Conflict:** 
+  - These areas are strategically located away from high-density regions, which tends to already have limited space, minimising any disruption/conflicts of land uses. This aligns with Singapore’s goal to balance energy needs with urban livability.   
+  
+- 4. **Low presence of high-rise buildings/sky-scrappers:** 
+  - Being in close proximity to Tengah Air Base, buildings in the certain area would have to adhere to height restrictions. Hence, the risks of buildings causing urban shading is reduced drastically.    
+
+- 5. **Land Availability/Usage:** 
+  - A large proportion of the area in the western part of Singapore is covered by areas like Western Water Catchment, Poyan Reservoir, and more importantly many protected areas and army bases such as SAFTI live firing range, Sungei Gedong camp etc. These areas would likely continue to stay the same, having a low density of population that would live in/pass by the area, which allows for a solar farm which would cause minimal disruption. 
+
+**Total Area (For the 3 zones identified):** 11.4 km² (\~31% of the 36.4 km² required for 3% of 2030 goals). These sites represent an optimal starting point, with future work recommended to expand analysis, taking into account more factors,  such as flood risk, temporal land-use changes etc.
+
+
+
+## Deep Dive Analysis
+
+### Lim Chu Kang
+
+
+**1\. Map of Lim Chu Kang (General Site Overview)**
+![](/images/results/Satellite_Lim_Chu_Kang.png)
+
+*Figure 1: Satellite Image of Lim Chu Kang*
+
+
+The spatial map of Lim Chu Kang highlights its exceptional suitability for utility-scale solar development. As the largest site (9 km²) with the highest MCDA score (0.89), it offers expansive, contiguous land with minimal urban interference. Its proximity to Tengah Air Base is strategically significant as it ensures restricted vertical development in the area due to aviation regulations, thereby minimizing future shading risks. The nearby water bodies also contribute to ambient cooling, which is critical for maintaining solar panel efficiency in Singapore’s tropical climate. The relative isolation of the site minimizes visual and social conflict, making Lim Chu Kang a flagship zone for renewable energy infrastructure with long-term spatial security.  
+
+**2\. Substation Analysis – Lim Chu Kang**  
+![](/images/results/Substation_Lim_Chu_Kang.png) 
+
+The substation proximity map for Lim Chu Kang reveals practical connectivity despite the area’s rural nature. The proximity to nearby industrial zones likely explains the presence of substations within accessible distances. Since energy transmission loss increases with distance, being reasonably near substations ensures efficient energy flow to the grid. This is a significant factor in site selection, as proximity to substations was assigned the highest AHP weight (28.8%) in the MCDA. It also reduces the need for extensive transmission infrastructure, making Lim Chu Kang both economically and technically favorable for solar farm deployment.
+
+**3\. Road Analysis – Lim Chu Kang**
+
+![](/images/results/Road_Lim_Chu_Kang.png)
+
+The road analysis of Lim Chu Kang illustrates a sparse but functional road network. While not as developed as urban cores, the roads are sufficient to support construction logistics and maintenance access. The site's relative proximity to Tengah Air Base further implies some degree of controlled infrastructure development, which supports secure long-term site access without significant urban pressure. The absence of dense road networks can also reduce heat island effects and ecological fragmentation. Lim Chu Kang thus presents an optimal balance of accessibility and environmental compatibility for long-term solar development.
+
+**4\. Slope Analysis – Lim Chu Kang**
+
+![](/images/results/Slope_Lim_Chu_Kang.png)
+
+Lim Chu Kang’s slope analysis shows predominantly flat terrain, which is ideal for cost-effective and stable solar installation. Flat terrain reduces construction complexity, lowers erosion risks, and allows for efficient panel alignment toward maximum solar exposure. Additionally, the proximity to Tengah Air Base enhances long-term protection against high-rise development, ensuring sunlight access remains unobstructed. This reinforces Lim Chu Kang’s position as a highly feasible site, especially when considering engineering constraints and spatial resilience.
+
+### Choa Chu Kang
+
+**1\. Map of Choa Chu Kang (General Site Overview)**
+![](/images/results/Satellite_Choa_Chu_Kang.png)
+
+*Figure 2: Satellite Image of Choa Chu Kang. The image appears more pixelated as it is zoomed in on a scale of 1:10000.*
+
+Choa Chu Kang presents a smaller (1.4 km²) but highly strategic area for solar deployment, with an MCDA score of \~0.88. Its location near Tengah Air Base restricts potential vertical development, preserving long-term solar access. The surrounding low-density development, coupled with the base’s buffer zoning, creates a stable land-use profile. Though limited in size, this site plays an important role in decentralized energy planning, integrating well into the existing urban fabric without major disruptions. The waterbody right behind the area also poses as a perfect zone for expansion if required, and the close proximity to substation also further adds to the suitability of the site for a solar farm.
+
+However, the site is currently occupied by Warren Golf & Country club (It is established as being Reserve Site in the MP19 Land Use), hence it might be a factor that should be considered before finalising the site selection. (E.g. logistic issues, community feedback etc.)
+
+**2\. Substation Analysis – Choa Chu Kang**
+
+![](/images/results/Substation_Choa_Chu_Kang.png)
+
+Choa Chu Kang’s proximity to multiple substations, as shown in the map, is a major asset. The relatively urbanized surroundings support a robust power grid, enabling direct and efficient solar energy integration. With the highest AHP weight assigned to substation proximity, this factor significantly boosts the site’s MCDA score. Its location within a well-connected grid zone means fewer infrastructure upgrades are needed, and the existing layout supports potential energy storage integration as well. Combined with the site's proximity to Tengah Air Base, which limits surrounding land-use volatility, this makes Choa Chu Kang a high-priority site for mid-scale solar installations.  
+
+**3\. Road Analysis – Choa Chu Kang**
+
+![](/images/results/Road_Choa_Chu_Kang.png)
+
+The road analysis confirms Choa Chu Kang's strength in transportation connectivity. Located near arterial roads and with strong internal access routes, the site is ideal for material delivery, construction phases, and long-term operations.   
+**4\. Slope Analysis – Choa Chu Kang**
+
+![](/images/results/Slope_Choa_Chu_Kang.png)
+
+The slope map reveals generally flat terrain across Choa Chu Kang, enabling efficient and low-cost solar infrastructure deployment. Flat land simplifies layout design, improves structural safety, and enhances energy capture by maintaining optimal panel orientation. 
+
+
+### Bahar
+
+**1\. Map of Bahar (General Site Overview)**
+![](/images/results/Satellite_Bahar.png)
+
+*Figure 3: Satellite Image of Bahar*
+
+Bahar emerges as a well-balanced site (1 km², MCDA 0.88) for solar farm consideration. It is also within the buffer zone of Tengah Air Base, providing long-term protection from vertical development that could obstruct sunlight. The map highlights available open land interspersed with low vegetation and natural drainage, ideal for ground-mounted PV systems. Though smaller in size, Bahar’s strategic seclusion, yet proximity to infrastructure, offers minimal land-use conflict while maintaining effective solar potential. This makes Bahar a solid candidate for smaller-scale or pilot solar projects within a multi-site national solar strategy.
+
+**2\. Substation Analysis – Bahar**
+
+![](/images/results/Substation_Bahar.png)
+
+The substation analysis for Bahar indicates strong accessibility, with substations located in close proximity to the site. This minimizes transmission losses and reduces infrastructure costs, making grid integration highly efficient. The presence of nearby energy infrastructure enhances Bahar’s suitability for solar farm development. As solar capacity expands, such close-range connectivity becomes a significant advantage—enabling reliable decentralised energy distribution while optimising land use for future development.
+
+**3\. Road Analysis – Bahar**
+
+![](/images/results/Road_Bahar.png)
+
+The road map of Bahar indicates limited but sufficient access via minor roads. While less connected than urban zones, the site offers enough logistical support for the development and maintenance of a solar farm. Road improvements may be required, but the existing network can serve basic operational needs.  
+
+**4\. Slope Analysis – Bahar**
+
+![](/images/results/Slope_Bahar.png)
+
+Bahar’s slope map indicates a predominantly flat area, suitable for solar deployment without requiring extensive land reshaping. Flat terrain is beneficial for both installation efficiency and long-term maintenance. The topographical consistency reinforces Bahar’s technical viability and operational resilience, especially when considered as part of a distributed solar network across north-western Singapore.
+
+## Conclusion
+
+The overall MCDA results and geospatial analysis across Lim Chu Kang, Choa Chu Kang, and Bahar offer critical insights for integrating solar infrastructure into Singapore’s urban land use strategy. 
+
+![](/images/results/MCDA_3areas.png){height=600px}
+
+*Figure 4: MCDA Across Lim Chu Kang, Choa Chu Kang and Bahar*
+
+
+A recurring theme across all three areas is their location, which is located towards the north/western area in Singapore, with low population density. Furthermore, the close proximity to Tengah Air Base imposes strict building height restrictions and and-use controls. This constraint, typically seen as a planning limitation, has become an advantage for solar farm planning, as it guarantees long-term access to unobstructed sunlight and shields the areas from intensive vertical development.
+
+**Lim Chu Kang**, with the largest land area and highest MCDA score, emerges as the **most viable candidate** for utility-scale solar deployment. Its relative remoteness reduces social conflict, while proximity to essential infrastructure such as substations and service roads ensures technical feasibility. The preservation of flat terrain further reduces construction costs and environmental disruption. It is also the **largest area by size (\~9km²)**, allowing for a larger scale solar farm compared to the other locations.
+
+**Choa Chu Kang** and **Bahar**, while more limited in space, exemplify how mid- and small-scale solar farms can be embedded within the urban fringe. Choa Chu Kang's advantage lies in its **exceptional connectivity** to the power grid and road network, which could see the construction and maintenance of solar panels in the long run one of the more economically viable locations. The presence of a waterbody in the surrounding could also potentially allow the solar farm to extend into water-based solar panels, allowing for higher power outputs without disrupting more land area or encroaching onto potential residential sites.
+
+Bahar’s value lies in its **balance** with moderate connectivity, strong slope profile, and environmental seclusion. Although grid access is less immediate than Choa Chu Kang, it remains acceptable for localized solar deployment. Bahar could serve as a secondary solar site or be integrated into a broader strategy that includes [energy storage](https://www.ema.gov.sg/our-energy-story/energy-grid/energy-storage-systems) or community energy models, given its close proximity to substation.
+
+From a national planning perspective, distributing solar infrastructure across these three areas **mitigates environmental risk** such as flooding and maximizes spatial efficiency. It avoids the over-concentration of critical assets, aligns with zoning regulations, and creates energy corridors that are both resilient and scalable. Moreover, the geospatial standardization process used in the MCDA reinforces transparency and objectivity in planning, ensuring that decisions are based not merely on availability, but on suitability.
+
+Lastly, the project illustrates the necessity of refining data inputs to support accurate spatial decision-making in future iterations of this analysis. The challenge with solar radiation data where Singapore is often treated as a homogenous region which highlights the need for more granular and accessible datasets to guide future renewable energy planning.
+
+In conclusion, the combined findings provide a roadmap for sustainable energy integration that aligns with Singapore’s land constraints and development priorities. Leveraging existing spatial regulations, terrain conditions, and infrastructural capacity, the selected areas offer not only **technical feasibility** but also **long-term compatibility** with broader urban and environmental goals.
 
 ---
 [Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd)

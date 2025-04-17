@@ -26,6 +26,8 @@ The datasets we've used can be found at [Data](report.qmd#data)
 2. Start a new QGIS project.
 3. Save the project in GIS_Metafolder/QGIS folder. Name the project any name of your choice.
 
+
+
 # 2. Extraction of Areas
 
 ## 2.1 Geoprocessing MP19 Subzone
@@ -67,10 +69,12 @@ The datasets we've used can be found at [Data](report.qmd#data)
 ## 2.3 Combining of Temperature to Subzone Boundaries
 
 1. Spatial Join:
+
     - Link the temperature point layer to the MP19 subzone polygons by performing a spatial join.
     - Ensure each polygon inherits the nearest weather station’s average temperature.
 
 2. Validation:
+
     - Verify that each polygon now includes an attribute for average temperature to be used in later analysis steps.
 
 
@@ -207,8 +211,6 @@ The datasets we've used can be found at [Data](report.qmd#data)
 
     - Overlay all reclassified layers using weighted overlay analysis to produce a final Multi-Criteria Decision Analysis (MCDA) map.
 
-    - Set a threshold (for example, 75% score or a value of 3.75 (maximum 5) in our case) to delineate areas considered suitable for solar farm development.
-
     | Standardised Range | Score |
     |--------------------|-------|
     | 0 - 20 | 1 |
@@ -217,7 +219,7 @@ The datasets we've used can be found at [Data](report.qmd#data)
     | 60 - 80 | 4 |
     | 80 - 100 | 5 |
 
-    - After performing the MCDA analysis, the layers are then reclassified based on the total MCDA score to obtain the suitable areas: 
+    - After performing the MCDA analysis, the resulting layers are reclassified based on their total MCDA scores to identify areas of varying suitability. A threshold is then applied—for instance, selecting areas with scores of 3.75 and above (75% of the maximum score of 5)—to delineate zones considered suitable for solar farm development.
 
     | Total MCDA Range | Score |
     |--------------------|-------|
