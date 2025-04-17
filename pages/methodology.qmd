@@ -176,6 +176,12 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
 
 
 
+
+
+
+
+
+
 2. Other Layers:
 
     Reclassify all standardised layers using a fixed range to provide a unbiased analysis
@@ -201,7 +207,7 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
     | >=3.75 (75th percentile) | 1 (Suitable) |
     | <3.75  | 0 (Unsuitable) |
 
-    ![](/images/lessons/image7.png)
+![](/images/lessons/image7.png)
 
 
 4. Validation and Iteration:
