@@ -7,9 +7,9 @@ format: html
 
 ## 1.1 Creating the Project Folder
 
-Create a new project folder called GIS_Metafolder or any name of your choice. In here we will save the raw datasets to be processed before it's added into our main QGIS project layers.
+- Create a new project folder called GIS_Metafolder or any name of your choice. In here we will save the raw datasets to be processed before it's added into our main QGIS project layers.
 
-Create a new sub-folder called QGIS or any name of your choice. This will be where you save the direct project draft file and other data package related documents.
+- Create a new sub-folder called QGIS or any name of your choice. This will be where you save the direct project draft file and other data package related documents.
 
 ## 1.2 Downloading the Data Sets
 
@@ -187,29 +187,26 @@ The datasets we've used can be found at [Data](report.qmd#data)
 
     - Areas closer to substations are prioritized due to ease of connecting to the electrical grid.
 
-## 4.3 Tweaking and Refinements
+## 4.3 MCDA
 
-1. Weight Adjustment via AHP:
+1. Standardisation
+
+    ![](/images/standard.png){width=400px}
+
+    - All layers except for aspect was standardised using the formula above, using raster calculator, into a scale of onto a scale of 0-100
+
+
+2. Weight Adjustment via AHP:
+
+    ![](/images/lessons/image6.png)
 
     - Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the criteria. Initially, the aspect criterion may have been over-weighted, so adjust the weights to balance the influence of all layers.
-
-2. Incorporating Temperature:
-
-    - Rasterize the viable_areas layer to incorporate the average temperature attribute.
-
-    - Reclassify the temperature values using the following scale:
-
-    | Temperature Range (°C) | Score | Rationale |
-    |------------------------|-------|-----------|
-    | 26.5–26.9 | 4 | Ideal – Peak efficiency (0% loss) |
-    | 27.0–27.4 | 3 | Excellent – Minimal loss (0.5–1%/°C) |
-    | 27.5–27.9 | 2 | Good – Moderate loss (1–1.5%/°C) |
-    | 28.0–28.2 | 1 | Fair – Significant loss (1.5–2%/°C) |
 
 
 3. Final MCDA Map Creation:
 
-    - Overlay all reclassified layers using weighted overlay analysis to produce a final Multi-Criteria Decision Analysis (MCDA) map.
+    - Reclassify all standardised layers using a fixed range to provide a unbiased analysis
+
 
     | Standardised Range | Score |
     |--------------------|-------|
@@ -219,18 +216,21 @@ The datasets we've used can be found at [Data](report.qmd#data)
     | 60 - 80 | 4 |
     | 80 - 100 | 5 |
 
-    - After performing the MCDA analysis, the resulting layers are reclassified based on their total MCDA scores to identify areas of varying suitability. A threshold is then applied—for instance, selecting areas with scores of 3.75 and above (75% of the maximum score of 5)—to delineate zones considered suitable for solar farm development.
+    - Overlay all reclassified layers using weighted overlay analysis to produce a Multi-Criteria Decision Analysis (MCDA) map.
+
+    - After performing the raster calculation, the resulting MCDA map was reclassified based on their total MCDA scores to identify areas of varying suitability. A threshold is then applied—for instance, selecting areas with scores of 3.75 and above (75% of the maximum score of 5)—to delineate zones considered suitable for solar farm development.
 
     | Total MCDA Range | Score |
     |--------------------|-------|
     | >=3.75 (75th percentile) | 1 (Suitable) |
     | <3.75  | 0 (Unsuitable) |
 
+    ![](/images/lessons/image7.png)
 
 
 4. Validation and Iteration:
 
-    - Review the MCDA output. If areas that are classified as suitable (green) or unsuitable (red) do not align with realistic expectations, iteratively refine the weights and reclassification schemes.
+    - Review the MCDA output. If areas that are classified as suitable (blue) or unsuitable (yellow) do not align with realistic expectations, iteratively refine the weights and reclassification schemes.
 
     - Consider additional factors or alternative reclassification thresholds until the output map reliably indicates viable areas for solar panel installations.
 

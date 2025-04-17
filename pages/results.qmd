@@ -114,6 +114,7 @@ Choa Chu Kang’s proximity to multiple substations, as shown in the map, is a m
 ![](/images/results/Road_Choa_Chu_Kang.png)
 
 The road analysis confirms Choa Chu Kang's strength in transportation connectivity. Located near arterial roads and with strong internal access routes, the site is ideal for material delivery, construction phases, and long-term operations.   
+
 **4\. Slope Analysis – Choa Chu Kang**
 
 ![](/images/results/Slope_Choa_Chu_Kang.png)

@@ -10,7 +10,7 @@ date: last-modified
 
 ## Project Overview
 
-Solarscape is a geospatial analysis project that identifies optimal solar farm locations by integrating multiple criteria such as solar radiation, land use, infrastructure proximity, and environmental constraints. Using **Multi-Criteria Decision Analysis (MCDA)** and QGIS, we developed a **scoring framework** to balance energy generation potential with ecological and social considerations.
+Solarscape is a geospatial analysis project that identifies optimal solar farm locations by integrating multiple criteria. Using a **Multi-Criteria Decision Analysis (MCDA)** approach together with QGIS as our main Geospatial Analysis Tool, we developed a **scoring framework** to balance energy generation potential against ecological and social considerations.
 
 
 ### Key Insights

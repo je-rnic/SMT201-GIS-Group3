@@ -20,13 +20,13 @@ For example, during our planning stage, we planned to take in solar radiation da
 When we further explored different websites such as Solar Energy Research Institute of Singapore (SERIES), we were able to get area specific solar radiation visualisation, but were unable to extract the values for our data analysis. The few figures below show example of the solar visualisation from different time periods:
 
 
-![](/images/lessons/image1.jpg)
+![](/images/lessons/image1.jpg){height=400px}
 *Figure 1: Solar Irradiance Map captured on 22 March 2025, 12:53pm*
 
-![](/images/lessons/image2.jpg)
+![](/images/lessons/image2.jpg){height=400px}
 *Figure 2: Solar Irradiance Map captured on 24 March 2025, 12:16pm*
 
-![](/images/lessons/image3.jpg)
+![](/images/lessons/image3.jpg){height=400px}
 *Figure 3: Solar Irradiance Map captured on 25 March 2025, 12:00pm*
 
 With visualisation updating every 10 seconds on the website and the Min/Max points moving around the country constantly, our group concluded that this may not be the most crucial and accurate data we need and we should instead focus more on other data like proximity to substation, which we could get our hands on.
@@ -40,15 +40,15 @@ When working with multi criteria on a different scale, e.g. proximity to substat
 Next, we also found out the importance of determining a logical and fair AHP weightage during our analysis process. For example, in our first iteration, we initially placed a really high weightage for aspect, as we thought that the direction the solar panel is facing would be the most crucial, as we want to maximise the “time-under-direct-sunlight”. While that is true, we quickly realised that we had given a fair higher weighting to aspect than we should have, as the MCDA output (prior to reclassification) looks incredibly similar to the aspect map, which does not provide us any insights to our analysis. 
 
 ### Iteration 1:
-![](/images/lessons/image4.png)
+![](/images/lessons/image4.png){height=200px}
 ![](/images/lessons/image5.png)
 
 *Figure 4: Iteration 1 MCDA Analysis Map (After reclassification)*
 
 ```
 Legend: 
-Red Color: Suitable areas (\>50% of max score)  
-Blue Color: Non suitable areas (\<50% of max score)
+Red Color: Suitable areas (>50% of max score)  
+Blue Color: Non suitable areas (<50% of max score)
 ```
 
 Through the figure above, it is clear that aspect was overweight in the AHP weight.   
@@ -58,7 +58,8 @@ Through the figure above, it is clear that aspect was overweight in the AHP weig
 
 In the next iteration, we did further research into the importance of other criterias, and tried to rebalance the AHP weight based on our findings.
 
-![](/images/lessons/image6.png)
+![](/images/lessons/image6.png){height=400px}
+
 *Figure 5: Iteration 2 AHP Weights*
 
 With this new AHP weights, we were able to achieve a much better result in our MCDA analysis. The figure below shows the output of our second iteration.
@@ -70,17 +71,27 @@ With this new AHP weights, we were able to achieve a much better result in our M
 
 ## Post MCDA Conclusion:
 
-Lastly, our final takeaway (probably also the most important) is that while MCDA serves as a crucial multi criteria guideline for us to identify suitable areas, it does not always mean that it is definitely the most suitable area.
+Lastly, our final takeaway (probably also the most important) is that while MCDA serves as a crucial multi criteria guideline for us to identify suitable areas, it **does not** always mean that it is definitely the most suitable area.
 
-Very often, after we obtain the MCDA result, it is crucial that we also perform visual analysis, such as viewing the raster satellite images, which really give us a full picture of how the selected area looks like.
+Very often, after we obtain the MCDA result, it is crucial that we also perform **visual analysis**, such as viewing the raster satellite images, which really give us a **full picture** of how the selected area looks like.
 
 For example, in this project, one of the data that we weren't able to obtain/use was the height of surrounding buildings and the possible shadow they may cast on the selected sites. However, with the satellite images, we were able to get a much clearer picture, and conclude that our 3 selected sites had no skyscrapers or high rise buildings in the surrounding areas. 
 
-Furthermore, with the satellite images itself, it also allows us to pinpoint many of the potential advantages and disadvantages of the site selected, at a very early stage.
+Furthermore, with the satellite images itself, it also allows us to **pinpoint** many of the **potential advantages and disadvantages** of the site selected, at a very **early stage**.
 
-For example, in the Lim Chu Kang site that was selected, while the location is really close to a substation and had a waterbody in close proximity, the satellite image was able to show that the vegetation in the area was well maintained and was likely not a natural vegetation but a managed vegetation.
+For example, in the Lim Chu Kang site that was selected, while the location is really close to a substation and had a waterbody in close proximity, the satellite image was able to show that the vegetation in the area was well-maintained and likely not natural vegetation but managed vegetation.
 
-With this, we were able to cross check with openstreetmap and indeed the site selected is currently occupied by Warren Golf & Country club, which shows that if the site were confirmed to be a solar farm, one of the few downsides would be the golf club would need to relocate to other areas, which may both be logistic issue, and may draw unfavourable feedbacks from the community, especially the members of the golf club.
+With this, we were able to cross check with the OpenStreetMap layer and indeed the site selected is currently occupied by Warren Golf & Country club. This indicates that if the site were selected to be a solar farm, one of the **significant downsides** would be that the golf club would need to relocate to another area, which may present both **logistical challenges and potentially draw unfavorable feedback** from the community, especially from members of the golf club.
+
+## Connecting Back to Singapore's Energy Challenge
+
+![](/images/solar-farm-banner.jpg){height=400px}
+
+The overall process and methodology developed in this project demonstrates how **sophisticated geospatial analysis** can help **overcome spatial constraints** through strategic site selection that considers **multiple factors simultaneously**. By integrating visual analysis with computational methods, we've created a more robust framework that *acknowledges both technical feasibility and practical implementation challenges*.
+
+This holistic approach aligns perfectly with Singapore's need for careful planning in its transition to a low-carbon economy. As highlighted in our background research on Sembcorp's floating solar projects and academic forecasting models, innovative thinking about space utilization combined with precise technical analysis is essential for Singapore's energy sustainability goals.
+
+By identifying specific sites like Lim Chu Kang, Choa Chu Kang, and Bahar – and thoroughly examining their practical viability beyond numerical scores – our project contributes valuable insights to Singapore's ongoing efforts to maximize renewable energy deployment despite its geographical limitations.
 
 ---
 
