@@ -12,11 +12,8 @@ format: html
 
 ### 1. Project Focus Decision
 
-#### Initial Options Considered:
-- Wind Farm Analysis
-- Solar Farm Analysis
-
 #### Points of Discussion:
+- **Initial Options Considered**: Wind Farm Analysis vs Solar Farm Analysis
 - **Wind Farm Limitations:**
   - Limited existing wind turbine installations in Singapore
   - Space constraints for new installations
@@ -30,7 +27,7 @@ format: html
   - Alignment with Singapore's renewable energy initiatives
 
 #### Decision:
-After discussion, the team unanimously agreed to focus on Solar Farm analysis as the primary project direction.
+- After discussion, the team unanimously agreed to focus on Solar Farm analysis as the primary project direction.
 
 ### 2. Data Requirements and Acquisition
 
@@ -87,9 +84,9 @@ After discussion, the team unanimously agreed to focus on Solar Farm analysis as
 
 #### Task Assignments:
 - **Jernic:**
-  - Set up the Quarto website
+  - Lead technical implementation of Quarto website
   - Configure GitHub repository and workflow
-  - Develop visualization components
+  - Develop and integrate geospatial visualization components
 
 - **Rui Chen:**
   - Lead technical implementation of QGIS analysis
@@ -109,5 +106,86 @@ After discussion, the team unanimously agreed to focus on Solar Farm analysis as
 
 
 Meeting adjourned at approximately 6:00 PM.
+
+
+
+## Meeting Minutes 2: Final Project Submission Update & Review
+
+**Date:** April 14, 2025  
+**Time:** 1.30 PM  
+**Attendees:** TOH Rui Chen, Chamus CHEW Yat Weng, Jernic YEO Jun Zhi  
+**Subject:** Finalization of QGIS Solar Farm Analysis Project Deliverables
+
+### Agenda Items Discussed
+
+### 1. Submission Components Finalization
+
+**a. Meeting Minutes Documentation**
+
+* Reviewed and finalized all previous meeting minutes for clarity, completeness, and formatting consistency.
+
+* Decided to include all minutes as part of the appendix in the final report submission.
+
+* Chamus assigned to compile and format all minutes into a single PDF document.
+
+**b. Project Artifacts**
+
+* Confirmed the inclusion of the following items as core artifacts:
+
+  * QGIS project files (.qgz)
+
+  * Processed datasets (e.g., land use polygons, slope, aspect, solar radiation)
+
+  * Code scripts used for data preparation and visualization
+
+  * Maps and analysis outputs
+
+* Rui Chen ensured all QGIS outputs were properly labeled and exported.
+
+* All datasets were cross-verified for source referencing and accuracy.
+
+**c. Project Website (Quarto)**
+
+* Jernic completed final formatting and design of the project website.
+
+* Confirmed all required sections were included: Introduction, Methodology, Analysis, Findings, Reflections, and References.
+
+* Interactive visualizations embedded successfully.
+
+* Website published and link submitted to the assignment portal.
+
+**d. Peer Evaluation for Other Groups**
+
+* Group discussed evaluation criteria (e.g., clarity, technical depth, visual design, innovation).
+
+* Each member assigned to evaluate one peer group project fairly and independently.
+
+* Evaluation forms to be submitted individually via the school portal by tonight.
+
+
+### 2. Final Quality Checks
+
+* Ran through a checklist of deliverables against the assignment brief.
+
+* Verified file naming conventions, versioning in GitHub, and metadata completeness.
+
+* All materials uploaded to shared GitHub repository and backed up on cloud storage.
+
+
+### 3. Reflections and Wrap-Up
+
+* Team reflected on project experience, challenges, and key learning outcomes:
+
+  * Improved proficiency in QGIS and spatial analysis
+
+  * Experience using GitHub for team collaboration
+
+  * Exposure to real-world data handling and solar energy planning
+
+* Noted strong teamwork and communication throughout the project
+
+
+Meeting adjourned at approximately 3:00 PM.
+
 
 ---
