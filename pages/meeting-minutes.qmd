@@ -84,7 +84,7 @@ format: html
 
 #### Task Assignments:
 - **Jernic:**
-  - Lead technical implementation of Quarto website
+  - Lead technical implementation of Project website using Quarto, HTML/SCSS and Javascript
   - Configure GitHub repository and workflow
   - Develop and integrate geospatial visualization components
 
