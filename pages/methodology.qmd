@@ -163,7 +163,7 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
     - Analyze the aspect layer to determine which orientations receive higher solar exposure
     - Reclassify the aspect values so that slopes facing the optimal direction for solar capture (as per your local conditions and guidelines) receive a higher suitability score.
 
-    -Aspect Scoring Table used for this analysis:
+    Aspect Scoring Table used for this analysis:
 
 
     | Aspect Range | Direction | Score | Rationale |
