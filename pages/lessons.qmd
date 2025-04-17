@@ -21,14 +21,14 @@ When we further explored different websites such as Solar Energy Research Instit
 
 Fig 1\. Solar Irradiance Map captured on 22 March 2025, 12:53pm
 
-![][image1]
+![](/images/lessons/image1.jpg)
 
 Fig 2\. Solar Irradiance Map captured on 24 March 2025, 12:16pm
 
-![][image2]
+![](/images/lessons/image2.jpg)
 
 Fig 3\. Solar Irradiance Map captured on 25 March 2025, 12:00pm  
-![][image3]
+![](/images/lessons/image3.jpg)
 
 With visualisation updating every 10 seconds on the website and the Min/Max points moving around the country constantly, our group concluded that this may not be the most crucial and accurate data we need and we should instead focus more on other data like proximity to substation, which we could get our hands on.
 
@@ -41,8 +41,8 @@ When working with multi criteria on a different scale, e.g. proximity to substat
 Next, we also found out the importance of determining a logical and fair AHP weightage during our analysis process. For example, in our first iteration, we initially placed a really high weightage for aspect, as we thought that the direction the solar panel is facing would be the most crucial, as we want to maximise the “time-under-direct-sunlight”. While that is true, we quickly realised that we had given a fair higher weighting to aspect than we should have, as the MCDA output (prior to reclassification) looks incredibly similar to the aspect map, which does not provide us any insights to our analysis. 
 
 **Iteration 1:**   
-![][image4]  
-![][image5]
+![](/images/lessons/image4.png)
+![](/images/lessons/image5.png)
 
 *Iteration 1 MCDA Analysis Map (After reclassification)*
 
@@ -52,15 +52,18 @@ Red Color: Suitable areas (\>50% of max score)
 Blue Color: Non suitable areas (\<50% of max score)
 
 Through the figure above, it is clear that aspect was overweight in the AHP weight.   
+
+
 **Iteration 2:** 
 
 In the next iteration, we did further research into the importance of other criterias, and tried to rebalance the AHP weight based on our findings.
 
-![][image6]
+![](/images/lessons/image6.png)
 
 With this new AHP weights, we were able to achieve a much better result in our MCDA analysis. The figure below shows the output of our second iteration.
 
-![][image7]  
+![](/images/lessons/image7.png)
+
 *Iteration 2 MCDA Analysis Map (After reclassification)*
 
 Legend: 
