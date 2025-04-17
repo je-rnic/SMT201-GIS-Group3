@@ -145,7 +145,7 @@ The datasets we've used can be found at [Data](report.qmd#data)
 
 ## 4.2 Standardization
 
-    ![](/images/standard.png){width=400px}
+![](/images/standard.png){width=400px}
 
     - All layers except for aspect was standardised using the formula above, using raster calculator, into a scale of onto a scale of 0-100
 
