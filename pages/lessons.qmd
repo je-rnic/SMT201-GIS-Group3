@@ -84,4 +84,4 @@ With this, we were able to cross check with openstreetmap and indeed the site se
 
 ---
 
-[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3)  
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd)

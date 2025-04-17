@@ -189,3 +189,4 @@ Meeting adjourned at approximately 3:00 PM.
 
 
 ---
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd)

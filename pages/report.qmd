@@ -73,3 +73,5 @@ Refer to [Methodology](methodology.qmd) for a full step-by-step guide to our pro
 ![](/images/GanttChart.jpg)
 
 
+--- 
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd)

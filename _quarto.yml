@@ -11,7 +11,7 @@ website:
   favicon: images/navbar-solarscape-logo2.svg
 
   page-footer:
-    center: "Copyright 2025, SolarScape"
+    center: "Copyright 2025, Solarscape"
   navbar:
     logo: images/navbar-solarscape-logo2.svg
     background: light

@@ -202,6 +202,7 @@ The criteria for solar farm suitability assessment include:
     | 27.5–27.9 | 2 | Good – Moderate loss (1–1.5%/°C) |
     | 28.0–28.2 | 1 | Fair – Significant loss (1.5–2%/°C) |
 
+
 3. Final MCDA Map Creation:
 
     - Overlay all reclassified layers using weighted overlay analysis to produce a final Multi-Criteria Decision Analysis (MCDA) map.
@@ -215,4 +216,5 @@ The criteria for solar farm suitability assessment include:
     - Consider additional factors or alternative reclassification thresholds until the output map reliably indicates viable areas for solar panel installations.
 
 
-[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3)  
+---
+[Explore Our GitHub Repository](https://github.com/je-rnic/SMT201-GIS-Group3) | [View Project Poster](poster.qmd)
