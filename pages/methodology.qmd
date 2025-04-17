@@ -175,9 +175,10 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
     | 288°–360° | North-West | 1 | Lowest solar exposure due to indirect sunlight in tropical regions |
 
 
+
 2. Other Layers:
 
-    - Reclassify all standardised layers using a fixed range to provide a unbiased analysis
+    Reclassify all standardised layers using a fixed range to provide a unbiased analysis
 
 
     | Standardised Range | Score |
@@ -189,7 +190,7 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
     | 80 - 100 | 5 |
 
 
-##4.5 Final MCDA Map Creation
+## 4.5 Final MCDA Map Creation
 
     - Add up all the (reclassified layer * AHP weight) to produce a Multi-Criteria Decision Analysis (MCDA) map using raster calculator.
 
