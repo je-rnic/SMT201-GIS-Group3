@@ -177,11 +177,6 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
 
 
 
-
-
-
-
-
 2. Other Layers:
 
     Reclassify all standardised layers using a fixed range to provide a unbiased analysis
@@ -198,9 +193,9 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
 
 ## 4.5 Final MCDA Map Creation
 
-    Add up all the (reclassified layer * AHP weight) to produce a Multi-Criteria Decision Analysis (MCDA) map using raster calculator.
+Add up all the (reclassified layer * AHP weight) to produce a Multi-Criteria Decision Analysis (MCDA) map using raster calculator.
 
-    After performing the above raster calculation, the resulting MCDA map was reclassified based on their total MCDA scores to identify areas of varying suitability. A threshold is then applied—for instance, selecting areas with scores of 3.75 and above (75% of the maximum score of 5)—to delineate zones considered suitable for solar farm development.
+After performing the above raster calculation, the resulting MCDA map was reclassified based on their total MCDA scores to identify areas of varying suitability. A threshold is then applied—for instance, selecting areas with scores of 3.75 and above (75% of the maximum score of 5)—to delineate zones considered suitable for solar farm development.
 
     | Total MCDA Range | Score |
     |--------------------|-------|
