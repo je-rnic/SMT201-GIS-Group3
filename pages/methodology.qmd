@@ -15,7 +15,6 @@ Create a new sub-folder called QGIS or any name of your choice. This will be whe
 
 The datasets we've used can be found at [Data](report.qmd#data)
 
-
 1. Download the data sets,
 2. Place them in the newly created GIS_Metafolder sub-folder, and
 3. Unzip them
@@ -196,12 +195,12 @@ The criteria for solar farm suitability assessment include:
 
     - Reclassify the temperature values using the following scale:
 
-Temperature Range (°C)	Score	Rationale
-26.5–26.9	4	Ideal – Peak efficiency (0% loss)
-27.0–27.4	3	Excellent – Minimal loss (0.5–1%/°C)
-27.5–27.9	2	Good – Moderate loss (1–1.5%/°C)
-28.0–28.2	1	Fair – Significant loss (1.5–2%/°C)
-
+    | Temperature Range (°C) | Score | Rationale |
+    |------------------------|-------|-----------|
+    | 26.5–26.9 | 4 | Ideal – Peak efficiency (0% loss) |
+    | 27.0–27.4 | 3 | Excellent – Minimal loss (0.5–1%/°C) |
+    | 27.5–27.9 | 2 | Good – Moderate loss (1–1.5%/°C) |
+    | 28.0–28.2 | 1 | Fair – Significant loss (1.5–2%/°C) |
 
 3. Final MCDA Map Creation:
 
