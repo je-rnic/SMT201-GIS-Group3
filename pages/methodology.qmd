@@ -79,7 +79,7 @@ The datasets we've used can be found at [Data](report.qmd#data)
 
 
 
-# 3. Proximity Analysis
+# 3. Data Preperation
 
 ## 3.1 Extracting Substation Locations
 
