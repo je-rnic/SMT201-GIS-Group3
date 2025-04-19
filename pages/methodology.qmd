@@ -113,7 +113,7 @@ The datasets we've used can be found at [Data](report.qmd#data)
 ## 3.4 Rasterising layers
 
 1. Raster Conversion:
-    - Convert key vector layers (e.g., substations, roads, and other critical infrastructure) into raster format.
+    - Convert key vector layers (e.g. substations, roads, and other critical infrastructure/data (if any)) into raster format.
 
 2. Method:
     - Use QGIS’s Rasterize (Vector to Raster) tool, ensuring that the resolution and alignment match your other spatial datasets.
