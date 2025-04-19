@@ -154,7 +154,7 @@ All layers except for aspect was standardised using the formula above, using ras
 
 ![](/images/lessons/image6.png)
 
-Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the criteria. Initially, the aspect criterion may have been over-weighted, so adjust the weights to balance the influence of all layers.
+Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the criteria. Ensure the consistency ratio is below 0.03 (3%). The weight should be tweak accordingly for each projects based on the context (e.g. location of analysis, any specific criterias to look out for?).
 
 ## 4.4 Reclassification:
 
