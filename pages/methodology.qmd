@@ -147,7 +147,7 @@ The datasets we've used can be found at [Data](report.qmd#data)
 
 ![](/images/standard.png){width=400px}
 
-All layers except for aspect was standardised using the formula above, using raster calculator, into a scale of onto a scale of 0-100
+All layers except for aspect was standardised using the formula above, using raster calculator, onto a scale of 0-100
 
 
 ## 4.3 AHP Weighting
