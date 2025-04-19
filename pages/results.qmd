@@ -43,12 +43,12 @@ After the MCDA analysis, we found 3 highly suitable areas to install solar farms
 	  *\* Note: This is with respect to other areas, as the data are standardized. Hence, good scores generally points to the area being more suitable than other areas, but does not guarantee to be the perfect area.*
 
 
-Other than the primary MCDA criterias, these areas also happen to have these plus points:
+Other than the primary MCDA criterias, these areas also tend to have these plus points:
 
 - 2. **Close proximity to water bodies**  
    - a. **Ability to tap onto more area:** Proximity to water bodies would provide more areas to tap onto, without causing any further land disruptions.  
    - b. **Cooling Benefits:** Proximity to water bodies could also lower ambient temperatures, maximising efficiency in solar panels.  
-
+  
 - 3. **Minimized Urban Conflict:** 
   - These areas are strategically located away from high-density regions, which tends to already have limited space, minimising any disruption/conflicts of land uses. This aligns with Singapore’s goal to balance energy needs with urban livability.   
   
