@@ -140,7 +140,7 @@ The datasets we've used can be found at [Data](report.qmd#data)
     - Aspect: East/West-facing slopes may be more beneficial depending on solar path.
     - Proximity to Roads: Accessibility is a key factor.
     - Proximity to Substations: Easier connection to the grid is desired.
-    - Temperature: As higher temperatures may affect solar efficiency, reclassifying temperature data ensures accurate assessments.
+    - Temperature: As higher temperatures may affect solar efficiency, lower temperature is generally prefered.
 
 
 ## 4.2 Standardization
