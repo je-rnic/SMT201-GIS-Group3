@@ -150,18 +150,13 @@ The datasets we've used can be found at [Data](report.qmd#data)
 All layers except for aspect was standardised using the formula above, using raster calculator, onto a scale of 0-100
 
 
-## 4.3 AHP Weighting
-
-![](/images/lessons/image6.png)
-
-Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the criteria. Ensure the consistency ratio is below 0.03 (3%). The weight should be tweak accordingly for each projects based on the context (e.g. location of analysis, any specific criterias to look out for?).
-
-## 4.4 Reclassification:
+## 4.3 Reclassification:
 
 1. Aspect:
 
     - Analyze the aspect layer to determine which orientations receive higher solar exposure
     - Reclassify the aspect values so that slopes facing the optimal direction for solar capture (as per your local conditions and guidelines) receive a higher suitability score.
+    - Based on the country of analysis, the aspect scoring would likely differ. For example, countries located in the Northen hemisphere such as US/UK may prefer the solar panel facing the South, while countries located in the Southern hemisphere such as Australia may prefer the solar panel facing the North.
 
     Aspect Scoring Table used for this analysis:
 
@@ -173,9 +168,6 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
     | 144°–216° | South | 4 | Good exposure; consistent performance throughout the day in equatorial regions |
     | 216°–288° | West | 5 | Optimal for capturing afternoon sunlight, offsetting evening energy demand |
     | 288°–360° | North-West | 1 | Lowest solar exposure due to indirect sunlight in tropical regions |
-
-
-
 
 2. Other Layers:
 
@@ -189,6 +181,16 @@ Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the cr
     | 40 - 60 | 3 |
     | 60 - 80 | 4 |
     | 80 - 100 | 5 |
+
+
+
+## 4.4 AHP Weighting
+
+![](/images/lessons/image6.png)
+
+Apply the Analytical Hierarchy Process (AHP) to assign weights to each of the criteria. Ensure the consistency ratio is below 0.03 (3%). The weight should be tweak accordingly for each projects based on the context (e.g. location of analysis, any specific criterias to look out for?).
+
+E.g. If the potential solar panels used for the project has [self rotating/tilting feaure](https://www.mbtenergy.com/angle-adjustable-solar-panel-tilt-mounting-brackets#:~:text=Adjustable%20brackets%20are%20a%20handy,extra%20mechanical%20and%20electrical%20parts), then aspect would likely have a lower weightage among the other factors. 
 
 
 ## 4.5 Final MCDA Map Creation
