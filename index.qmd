@@ -16,7 +16,7 @@ Solarscape is a geospatial analysis project that identifies optimal solar farm l
 ### Key Insights
 
 - **Initial Site Analysis**: Identify optimal locations using GIS-based spatial analysis with URA Master Plan 2019 data.
-- **Land-Use Constraints**: Excluded high-rise urban areas, natural reserves, and offshore islands.
+- **Land-Use Constraints**: Excluded urban areas such as residential and commercial zones, and unavailable areas such as natural reserves, protected areas and offshore islands.
 - **Environmental Criteria**: Scored using various factors i.e. Proximity to Substations, Aspect, Slope, Proximity to Roads, Temperature
 - **Decision-Making Framework**: Applied **Quantitative MCDA Scoring** with suitability thresholds.
 - **Post-MCDA Evaluation**: Utilised satellite images for visual inspection/analysis of suitable sites.
