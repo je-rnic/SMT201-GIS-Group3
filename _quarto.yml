@@ -16,8 +16,8 @@ website:
     logo: images/navbar-solarscape-logo2.svg
     background: light
     left:
-      - href: pages/report.html
-        text: Report
+      - href: pages/proposal.html
+        text: Proposal
       - href: pages/methodology.html
         text: Methodology
       - href: pages/results.html
