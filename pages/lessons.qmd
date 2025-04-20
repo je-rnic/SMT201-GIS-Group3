@@ -21,12 +21,15 @@ When we further explored different websites such as Solar Energy Research Instit
 
 
 ![](/images/lessons/image1.jpg){height=400px}
+
 *Figure 1: Solar Irradiance Map captured on 22 March 2025, 12:53pm*
 
 ![](/images/lessons/image2.jpg){height=400px}
+
 *Figure 2: Solar Irradiance Map captured on 24 March 2025, 12:16pm*
 
 ![](/images/lessons/image3.jpg){height=400px}
+
 *Figure 3: Solar Irradiance Map captured on 25 March 2025, 12:00pm*
 
 With visualisation updating every 10 seconds on the website and the Min/Max points moving around the country constantly, our group concluded that this may not be the most crucial and accurate data we need and we should instead focus more on other data like proximity to substation, which we could get our hands on.
