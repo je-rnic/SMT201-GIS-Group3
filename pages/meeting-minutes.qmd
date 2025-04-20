@@ -132,7 +132,7 @@ Meeting adjourned at approximately 6:00 PM.
 
 * Confirmed the inclusion of the following items as core artifacts:
 
-  * QGIS project files (.qgz)
+  * QGIS project files (.qgs)
 
   * Processed datasets (e.g., land use polygons, slope, aspect, solar radiation)
 
