@@ -38,9 +38,9 @@ Furthermore, like other groups mentioned during the townhall presentation, with 
 
 ## MCDA Analysis (Hands On):
 
-When working with multi criteria on a different scale, e.g. proximity to substation, average temperature, it is almost always better to standardize the values, and put them on an equal scale e.g. 0-100 first, before reclassification to ensure the criterias are fairer.
+When working with multi criteria on a different scale, e.g. proximity to substation, average temperature, we learned that it is almost always better to standardize the values, and put them on an equal scale e.g. 0-100 first, before reclassification to ensure the criterias are fairer.
 
-Next, we also found out the importance of determining a logical and fair AHP weightage during our analysis process. For example, in our first iteration, we initially placed a really high weightage for aspect, as we thought that the direction the solar panel is facing would be the most crucial, as we want to maximise the “time-under-direct-sunlight”. While that is true, we quickly realised that we had given a fair higher weighting to aspect than we should have, as the MCDA output (prior to reclassification) looks incredibly similar to the aspect map, which does not provide us any insights to our analysis. 
+Next, we also found out the importance of determining a logical and fair AHP weightage during our analysis process. For example, in our first iteration, we initially placed a really high weightage for aspect, as we thought that the direction the solar panel is facing would be the most crucial, as we want to maximise the “time-under-direct-sunlight”. While that is true, we quickly realised that we had given a far higher weighting to aspect than we should have, as the MCDA output (after reclassification) looks incredibly similar to the aspect map, which does not provide us any insights to our analysis. 
 
 ### Iteration 1:
 ![](/images/lessons/image4.png){height=200px}
@@ -82,7 +82,7 @@ For example, in this project, one of the data that we weren't able to obtain/use
 
 Furthermore, with the satellite images itself, it also allows us to **pinpoint** many of the **potential advantages and disadvantages** of the site selected, at a very **early stage**.
 
-For example, in the Lim Chu Kang site that was selected, while the location is really close to a substation and had a waterbody in close proximity, the satellite image was able to show that the vegetation in the area was well-maintained and likely not natural vegetation but managed vegetation.
+For example, in the Choa Chu Kang site that was selected, while the location is really close to a substation and had a waterbody in close proximity, the satellite image was able to show that the vegetation in the area was well-maintained and likely not natural vegetation but managed vegetation.
 
 With this, we were able to cross check with the OpenStreetMap layer and indeed the site selected is currently occupied by Warren Golf & Country club. This indicates that if the site were selected to be a solar farm, one of the **significant downsides** would be that the golf club would need to relocate to another area, which may present both **logistical challenges and potentially draw unfavorable feedback** from the community, especially from members of the golf club.
 
