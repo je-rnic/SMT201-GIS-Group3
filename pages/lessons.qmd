@@ -7,7 +7,7 @@ Through this project, we have gotten many valuable insights, and in this section
 
 ## Research Phase:
 
-During the research phase, we found that an estimated 36.4 km² of land area would be required just to meet Singapore’s projected energy demand in 2030\. This implies that even if the entire mainland were covered with solar panels, it would only be sufficient to meet approximately half of the country's energy needs. 
+During the research phase, we found that an estimated 36.4 km² of land area would be required just to meet 3% of Singapore’s projected energy demand in 2030\. This implies that even if the entire mainland were covered with solar panels, it would only be sufficient to meet approximately half of the country's energy needs. 
 
 On the other hand, through our research, we also found that nuclear power is significantly more efficient when it comes to land use. For the same amount of electricity generated, a nuclear power plant can take up around 75 times less land than a solar farm and up to 360 times less than a wind farm ([The Nuclear Energy Institute, 2015](https://www.nei.org/news/2015/land-needs-for-wind-solar-dwarf-nuclear-plants)), which could be a crucial factor for a land-scarce country like Singapore. However, this advantage would only hold if we exclude all potential risks, such as health hazards and environmental risks etc. Hence, striking the balance is really crucial in maintaining a green energy supply in Singapore. 
 
