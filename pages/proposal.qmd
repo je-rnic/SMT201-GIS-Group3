@@ -1,5 +1,5 @@
 ---
-title: "Report"
+title: "Proposal"
 format: html
 bibliography: references.bib
 
