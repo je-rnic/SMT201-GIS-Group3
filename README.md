@@ -1,7 +1,8 @@
-# SMT201-GIS-Group3
+# [Solarscape](https://solarscape.netlify.app/)
 
 ## Project Overview
-Solarscape is a geospatial analysis project that identifies optimal solar farm locations within the Singapore context. Using a **Multi-Criteria Decision Analysis (MCDA)** approach together with QGIS as our main Geospatial Analysis Tool, we developed a **scoring framework** to balance energy generation potential against ecological and social considerations.
+Solarscape is a geospatial analysis project developed as part of the SMT201: Smart-City Management & Technology curriculum at Singapore Management University.
+Our goal: To identify optimal solar farm locations in Singapore by balancing energy generation potential with ecological and social considerations.
 
 ## Key Insights
 
